@@ -10,5 +10,11 @@
 <body>
     <header>
     </header>
+    <div class="container-categories">
+        <h2>Catégories :</h2>
+        <div class="card-categories">
+            
+        </div>
+    </div>
 </body>
 </html>
