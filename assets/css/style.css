@@ -48,20 +48,20 @@ body{
 .container-dark-part-footer{
     background-color: #141414;
     color: white;
-    padding-left: 7vw;
-    padding-right: 7vw;
-    padding-top: 5vw;
-    padding-bottom: 2vw;
 }
 
 .nav-dark-part-footer{
     display: flex;
     gap: 5vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 5vw;
 }
 
 .copyright{
     display: flex;
     justify-content: center;
+    background: linear-gradient(to right , #191B30 , #43243A);
 }
 
 .lst-footer span{
