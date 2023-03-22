@@ -1,10 +1,10 @@
 <?php 
-$xml = simplexml_load_file('http://www.ouest-france.fr/rss-en-continu.xml%27');
+$xml = simplexml_load_file('http://www.ouest-france.fr/rss-en-continu.xml');
 $titles = $xml->xpath('//title');
 
-foreach ($titles as $title) {
-  echo $title . '<br>';
-}
+// foreach ($titles as $title) {
+//   echo $title . '<br>';
+// }
 
 
 
