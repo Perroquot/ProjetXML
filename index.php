@@ -48,7 +48,23 @@
     />
   </defs>
 </svg>
+    </header>
+    <main>
+            <nav id="navbar">
+                <a href="#">Acceuil</a>
+                <a href="#">Préférences</a>
+            </nav>
+            <section id="entrer">
+                <div>
+                    <h1>Titre de l'article</h1>
+                </div>
+                <div>
+                <img src="./assets/img/Mbappe.png" alt="mbappé paris">
+                </div>
+                <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+            </section>
 
+    </main>
     <!-- Container catégories -->
     <section>
         <div class="container-categories">
@@ -87,6 +103,10 @@
     </section>
 
     <footer>
+        <div class="reseaux">
+                <div><p>Suivez nous <br> sur les reseaux sociaux</p></div>
+                <div class="reseaux-sociaux"><img src="./assets/img/FB-white.png" alt=""><img src="./assets/img/Insta-white.png" alt=""><img src="./assets/img/LinkInd-white.png" alt=""><img src="./assets/img/Twitter-white.png" alt=""></div>
+            </div>
         <div class="container-dark-part-footer">
             <div class="nav-dark-part-footer">
                 <div>

@@ -4,6 +4,42 @@ body{
     box-sizing: border-box;
     font-family: 'poppins';
 }
+header{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: black;
+}
+#navbar{
+    padding: 1%;
+    background: linear-gradient(to right , #191B30 , #43243A);
+    display: flex;
+    justify-content: start;
+}
+
+#navbar a{
+    color: white;
+    text-decoration: none;
+    margin-left: 5%;
+}
+#entrer{
+    padding-top: 2vw;
+    padding-left: 7vw;
+}
+.reseaux{
+    padding: 3%;
+    background: linear-gradient(to right , #191B30 , #43243A);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+
+.reseaux-sociaux{
+    width: 13vw;
+    display: flex;
+    justify-content: space-evenly;
+}
 
 /* container catégories */
 .container-categories{
