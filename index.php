@@ -49,54 +49,72 @@
   </defs>
 </svg>
 
-    </header>
-    <main>
-        <nav id="navbar">
-            <a href="#">Acceuil</a>
-            <a href="#">Préférences</a>
-        </nav>
-        <section id="entrer">
-            <div>
-                <h1>Title de l'article</h1>
-            </div>
-            <div>
-            <img src="./assets/img/Mbappe.png" alt="mbappé paris">
-            </div>
-            <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
-        </section>
-        
-        <!-- Container catégories -->
+    <!-- Container catégories -->
+    <section>
         <div class="container-categories">
             <h2>Catégories :</h2>
             <div class="card-categories">
                 <div class="card card1">
                     <img src="./assets/img/Rectangle 164.png" alt="">
-                    <h4>Sport</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="card-text">
+                        <h4>Sport</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
                 </div>
                 <div class="card card2">
-                    <img src="" alt="">
-                    <h4>France Politique</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="./assets/img/Rectangle 166.png" alt="">
+                    <div class="card-text">
+                        <h4>Politique France</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
                 </div>
                 <div class="card card3">
-                    <img src="" alt="">
-                    <h4>Monde</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="./assets/img/Rectangle 168.png" alt="">
+                    <div class="card-text">
+                        <h4>Monde</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
                 </div>
                 <div class="card card4">
-                    <img src="" alt="">
-                    <h4>Culture</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="./assets/img/Rectangle 170.png" alt="">
+                    <div class="card-text">
+                        <h4>Culture</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="reseaux">
-                <div><p>Suivez nous <br> sur les reseaux sociaux</p></div>
-                <div class="reseaux-sociaux"><img src="./assets/img/FB-white.png" alt=""><img src="./assets/img/Insta-white.png" alt=""><img src="./assets/img/LinkInd-white.png" alt=""><img src="./assets/img/Twitter-white.png" alt=""></div>
+    </section>
+
+    <footer>
+        <div class="container-dark-part-footer">
+            <div class="nav-dark-part-footer">
+                <div>
+                    <img src="./assets/img/logo.png" alt="">
+                </div>
+                <div class="lst-footer categories-footer">
+                    <ul>
+                        <li><span>Catégorie</span></li>
+                        <li>Sport</li>
+                        <li>Politique France</li>
+                        <li>Monde</li>
+                        <li>Culture</li>
+                    </ul>
+                </div>
+
+                <div class="lst-footer navigation-footer">
+                    <ul>
+                        <li><span>Navigation</span></li>
+                        <li>Accueil</li>
+                        <li>Préférences</li>
+                    </ul>
+                </div>
             </div>
-        </footer>
-    </main>
+            <div class="copyright">
+                <p>© 2023 - La Manews tous droits résérvés</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
