@@ -1,0 +1,45 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'poppins';
+    
+}
+/* en tete avec le logo */
+header{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: black;
+}
+/* barre de recherche avec le degrader et la position des A */
+#navbar{
+    padding: 1%;
+    background: linear-gradient(to right , #191B30 , #43243A);
+    display: flex;
+    justify-content: start;
+}
+
+#navbar a{
+    color: white;
+    text-decoration: none;
+    margin-left: 5%;
+}
+
+#entrer{
+    padding-top: 2%;
+    padding-left: 4%;
+}
+.reseaux{
+    padding: 3%;
+    background: linear-gradient(to right , #191B30 , #43243A);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+
+.reseaux-sociaux{
+    width: 13vw;
+    display: flex;
+    justify-content: space-evenly;
+}
