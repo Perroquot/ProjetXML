@@ -1,4 +1,14 @@
-<?php ?>
+<?php 
+$xml = simplexml_load_file('http://www.ouest-france.fr/rss-en-continu.xml%27');
+$titles = $xml->xpath('//title');
+
+foreach ($titles as $title) {
+  echo $title . '<br>';
+}
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -26,7 +36,7 @@
             </div>
             <div class="card card2">
                 <img src="" alt="">
-                <h4>France Politique</h4>
+                <h4><?php echo $titles[0] ?></h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="card card3">
