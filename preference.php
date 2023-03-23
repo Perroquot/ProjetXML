@@ -104,7 +104,7 @@
                     </div>
                 </div>
             </div>
-            <button type="button" class="btn-valide">Valider</button>
+             <button class="button-valide" type="button">Valider</button>
         </div>
     </section>
     </main>

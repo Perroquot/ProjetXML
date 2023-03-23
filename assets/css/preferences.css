@@ -69,16 +69,19 @@ header{
 }
 
 /* boutton valider */
-.btn-valide{
-    background: linear-gradient(to right , #191B30 , #43243A);
+.button-valide{
+    background-color: #141414;
     color: white;
-    border: none;
+    border: 1px solid #141414;
     padding: 1.5vh;
     margin-left: 2vh;
+    transition: .2s linear;
 }
 
-.btn-valide:hover{
-    background-color: #141414;
+.button-valide:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
 }
 
 .reseaux{
@@ -132,7 +135,6 @@ header{
 }
 
 @media only screen and (max-width:1024px) {
-
     #navbar{
         padding: 2vh;
     }
@@ -149,7 +151,7 @@ header{
         height: 100%;
     }
         /* boutton valider */
-    .btn-valide{
+    .button-valide{
         padding: 1.5vh;
         margin-left: 2vh;
         margin-bottom:5vh;
