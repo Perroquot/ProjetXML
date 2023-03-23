@@ -109,21 +109,21 @@
                     <img src="./assets/img/logo.png" alt="">
                 </div>
                 <div class="lst-footer categories-footer">
-                    <ul>
+                
                         <li><span>Catégorie</span></li>
                         <li>Sport</li>
                         <li>Politique France</li>
                         <li>Monde</li>
                         <li>Culture</li>
-                    </ul>
+                    
                 </div>
 
                 <div class="lst-footer navigation-footer">
-                    <ul>
+                    
                         <li><span>Navigation</span></li>
                         <li>Accueil</li>
                         <li>Préférences</li>
-                    </ul>
+                    
                 </div>
             </div>
             <div class="copyright">
