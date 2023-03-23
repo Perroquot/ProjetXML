@@ -16,12 +16,64 @@ body{
 
 .container-categories h2{
     color: white;
+    margin-left: 2vh;
 }
 
 .card-categories{
     display: flex;
+    justify-content: center;
 }
 
 .card{
     background-color: #F3F3F3;
+    margin: 2vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+}
+
+.card-text{
+    padding: 1.5vh;
+    font-size: .8em;
+}
+
+.card img{
+    width: 100%;
+}
+
+/* dark part footer */
+
+.container-dark-part-footer{
+    background-color: #141414;
+    color: white;
+}
+
+.nav-dark-part-footer{
+    display: flex;
+    gap: 5vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 5vw;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right , #191B30 , #43243A);
+}
+
+.lst-footer span{
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.lst-footer ul{
+    margin-top: 0%;
+}
+
+.lst-footer li{
+    list-style: none;
+    line-height: 5vh;
 }

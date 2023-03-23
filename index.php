@@ -96,7 +96,7 @@ $titles = $xml->xpath('//title');
 
     <section class="article">
         <div class="container-article">
-            <div class="article1"><?php echo $titles[0] ?></div>
+            <div class="article1"><?php echo $titles[1] ?></div>
         </div>
     </section>
 
