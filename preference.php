@@ -52,13 +52,12 @@
 
     <main>
     <nav id="navbar">
-            <a href="./index.php">Acceuil</a>
+            <a href="./index.php">Accueil</a>
             <a href="./preference.php">Préférences</a>
     </nav>
         <!-- Container catégories -->
     <section>
         <div class="container-categories">
-            <h2>Catégories :</h2>
             <div class="card-categories">
                 <div class="card card1">
                     <img src="./assets/img/Rectangle 164.png" alt="">
@@ -105,7 +104,7 @@
                     </div>
                 </div>
             </div>
-            <button type="button" class="btn-valide">Valider</button>
+             <button class="button-valide" type="button">Valider</button>
         </div>
     </section>
     </main>

@@ -12,6 +12,7 @@
     <title>ProjetXML</title>
 </head>
 <body>
+    
     <header>
         <svg class="image-1-1" width="99" height="68" viewBox="0 0 99 68" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g clip-path="url(#clip0_38_119)">
@@ -29,10 +30,9 @@
             </defs>
         </svg>
     </header>
-</header>
     <main>
         <nav id="navbar">
-            <a href="#">Acceuil</a>
+            <a href="#">Accueil</a>
             <a href="./preference.php">Préférences</a>
         </nav>
         <section id="entrer">
