@@ -1,3 +1,20 @@
+<?php
+setcookie('user_fav_sport','sport',strtotime('1 year'));
+setcookie('user_fav_politique','politique_francaise',strtotime('1 year'));
+setcookie('user_fav_culture','culture',strtotime('1 year'));
+setcookie('user_fav_monde','monde',strtotime('1 year'));
+
+if(isset($_COOKIE['user_fav_sport'])){
+        echo 'vous avez choisi la catégorie' .$_COOKIE['user_fav_sport'];   
+}elseif(isset($_COOKIE['user_fav_politique'])){
+        echo 'vous avez choisi la catégorie' .$_COOKIE['user_fav_politique'];
+}elseif(isset($_COOKIE['user_fav_culture'])){
+        echo 'vous avez choisi la catégorie' .$_COOKIE['user_fav_culture'];
+}elseif(isset($_COOKIE['user_fav_monde'])){
+    echo 'vous avez choisi la catégorie' .$_COOKIE['user_fav_monde'];
+}
+?>
+
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
