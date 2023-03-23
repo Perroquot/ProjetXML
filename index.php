@@ -76,6 +76,7 @@ $titles = $xml->xpath('//title');
     </section>
 
     <section class="article">
+        <h2>Articles :</h2>
         <div class="container-article">
             <div class="article1"><?php echo $titles[1] ?></div>
         </div>
@@ -88,13 +89,13 @@ $titles = $xml->xpath('//title');
                     <img src="./assets/img/logo.png" alt="">
                 </div>
                 <div class="lst-footer categories-footer">
-                    <ul>
+                    
                         <li><span>Catégorie</span></li>
                         <li>Sport</li>
                         <li>Politique France</li>
                         <li>Monde</li>
                         <li>Culture</li>
-                    </ul>
+                    
                 </div>
 
                 <div class="lst-footer navigation-footer">
