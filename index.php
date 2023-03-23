@@ -9,6 +9,10 @@
 </head>
 <body>
     <header>
+    <?php
+$xml=simplexml_load_file("http://www.ouest-france.fr/rss-en-continu.xml");
+print_r($xml);
+?>
     </header>
 </body>
 </html>
