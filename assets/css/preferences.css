@@ -113,3 +113,18 @@ header{
     list-style: none;
     line-height: 5vh;
 }
+
+.reseaux{
+    padding: 3%;
+    background: linear-gradient(to right , #191B30 , #43243A);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+
+.reseaux-sociaux{
+    width: 13vw;
+    display: flex;
+    justify-content: space-evenly;
+}
