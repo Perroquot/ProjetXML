@@ -32,7 +32,7 @@
 </header>
     <main>
         <nav id="navbar">
-            <a href="#">Acceuil</a>
+            <a href="#">Accueil</a>
             <a href="./preference.php">Préférences</a>
         </nav>
         <section id="entrer">
