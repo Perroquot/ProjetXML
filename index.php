@@ -33,7 +33,7 @@
     <main>
         <nav id="navbar">
             <a href="#">Acceuil</a>
-            <a href="#">Préférences</a>
+            <a href="./preference.php">Préférences</a>
         </nav>
         <button class="py-2 px-4 font-bold bg-gray-400 text-gray-800" name="light" type="submit" value="light"><i class="fas fa-sun"></i></button>
                     <button class="py-2 px-4 font-bold bg-gray-800" name="dark" type="submit" value="dark"><i class="fas fa-moon"></i></button>

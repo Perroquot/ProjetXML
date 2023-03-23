@@ -7,8 +7,8 @@
     <title>Préférences</title>
 </head>
 <body>
-    <main>
         <header>
+        <a href="./index.php">click</a>
             <svg
                 class="image-1-1"
                 width="99"
@@ -45,6 +45,91 @@
                 </defs>
             </svg>
         </header>
+
+    <main>
+        <!-- Container catégories -->
+    <section>
+        <div class="container-categories">
+            <h2>Catégories :</h2>
+            <div class="card-categories">
+                <div class="card card1">
+                    <img src="./assets/img/Rectangle 164.png" alt="">
+                    <div class="card-text">
+                        <h4>Sport</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div>
+                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
+                                <input type="checkbox" id="scales" name="scales">
+                            </div>
+                    </div>
+                </div>
+                <div class="card card2">
+                    <img src="./assets/img/Rectangle 166.png" alt="">
+                    <div class="card-text">
+                        <h4>Politique France</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div>
+                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
+                                <input type="checkbox" id="scales" name="scales">
+                            </div>
+                    </div>
+                </div>
+                <div class="card card3">
+                    <img src="./assets/img/Rectangle 168.png" alt="">
+                    <div class="card-text">
+                        <h4>Monde</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div>
+                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
+                                <input type="checkbox" id="scales" name="scales">
+                            </div>
+                    </div>
+                </div>
+                <div class="card card4">
+                    <img src="./assets/img/Rectangle 170.png" alt="">
+                    <div class="card-text">
+                        <h4>Culture</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div>
+                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
+                                <input type="checkbox" id="scales" name="scales">
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn-valide">Valider</button>
+        </div>
+    </section>
     </main>
+
+    <footer>
+        <div class="container-dark-part-footer">
+            <div class="nav-dark-part-footer">
+                <div>
+                    <img src="./assets/img/logo.png" alt="">
+                </div>
+                <div class="lst-footer categories-footer">
+                    <ul>
+                        <li><span>Catégorie</span></li>
+                        <li>Sport</li>
+                        <li>Politique France</li>
+                        <li>Monde</li>
+                        <li>Culture</li>
+                    </ul>
+                </div>
+
+                <div class="lst-footer navigation-footer">
+                    <ul>
+                        <li><span>Navigation</span></li>
+                        <li>Accueil</li>
+                        <li>Préférences</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 - La Manews tous droits résérvés</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
