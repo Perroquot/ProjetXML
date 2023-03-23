@@ -55,6 +55,8 @@
             <a href="#">Acceuil</a>
             <a href="#">Préférences</a>
         </nav>
+        <button class="py-2 px-4 font-bold bg-gray-400 text-gray-800" name="light" type="submit" value="light"><i class="fas fa-sun"></i></button>
+                    <button class="py-2 px-4 font-bold bg-gray-800" name="dark" type="submit" value="dark"><i class="fas fa-moon"></i></button>
         <section id="entrer">
             <div>
                 <h1>Title de l'article</h1>
@@ -64,12 +66,13 @@
             </div>
             <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
         </section>
-        <footer>
-            <div class="reseaux">
-                <div><p>Suivez nous <br> sur les reseaux sociaux</p></div>
-                <div class="reseaux-sociaux"><img src="./assets/img/FB-white.png" alt=""><img src="./assets/img/Insta-white.png" alt=""><img src="./assets/img/LinkInd-white.png" alt=""><img src="./assets/img/Twitter-white.png" alt=""></div>
-            </div>
-        </footer>
-    </main>
+
+    </main> 
+    <footer>
+        <div class="reseaux">
+            <div><p>Suivez nous <br> sur les reseaux sociaux</p></div>
+            <div class="reseaux-sociaux"><img src="./assets/img/FB-white.png" alt=""><img src="./assets/img/Insta-white.png" alt=""><img src="./assets/img/LinkInd-white.png" alt=""><img src="./assets/img/Twitter-white.png" alt=""></div>
+        </div>
+    </footer>
 </body>
 </html>
