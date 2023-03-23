@@ -29,7 +29,6 @@
             </defs>
         </svg>
     </header>
-</header>
     <main>
         <nav id="navbar">
             <a href="#">Accueil</a>
