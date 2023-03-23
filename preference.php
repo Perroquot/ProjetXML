@@ -58,7 +58,6 @@
         <!-- Container catégories -->
     <section>
         <div class="container-categories">
-            <h2>Catégories :</h2>
             <div class="card-categories">
                 <div class="card card1">
                     <img src="./assets/img/Rectangle 164.png" alt="">
