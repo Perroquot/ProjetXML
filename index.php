@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/effets.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>ProjetXML</title>
 </head>
 <body>
@@ -66,6 +66,7 @@
             </div>
             <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
         </section>
+<<<<<<< HEAD
 
     </main> 
     <footer>
@@ -74,5 +75,41 @@
             <div class="reseaux-sociaux"><img src="./assets/img/FB-white.png" alt=""><img src="./assets/img/Insta-white.png" alt=""><img src="./assets/img/LinkInd-white.png" alt=""><img src="./assets/img/Twitter-white.png" alt=""></div>
         </div>
     </footer>
+=======
+        
+        <!-- Container catégories -->
+        <div class="container-categories">
+            <h2>Catégories :</h2>
+            <div class="card-categories">
+                <div class="card card1">
+                    <img src="./assets/img/Rectangle 164.png" alt="">
+                    <h4>Sport</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="card card2">
+                    <img src="" alt="">
+                    <h4>France Politique</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="card card3">
+                    <img src="" alt="">
+                    <h4>Monde</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="card card4">
+                    <img src="" alt="">
+                    <h4>Culture</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="reseaux">
+                <div><p>Suivez nous <br> sur les reseaux sociaux</p></div>
+                <div class="reseaux-sociaux"><img src="./assets/img/FB-white.png" alt=""><img src="./assets/img/Insta-white.png" alt=""><img src="./assets/img/LinkInd-white.png" alt=""><img src="./assets/img/Twitter-white.png" alt=""></div>
+            </div>
+        </footer>
+    </main>
+>>>>>>> e493d11502b13c46e8b6497bce965c39bc4f7e3a
 </body>
 </html>
