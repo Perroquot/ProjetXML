@@ -13,6 +13,7 @@
 </head>
 <body>
     <header>
+        <a href="./preference.php">click</a>
     <svg
   class="image-1-1"
   width="99"

@@ -2,14 +2,13 @@
     margin: 0%;
     padding: 0%;
     font-family: 'poppins';
-    
 }
 /* en tete avec le logo */
 header{
     display: flex;
     justify-content: center;
     padding: 2%;
-    background-color: black;
+    background-color: #141414;
 }
 /* barre de recherche avec le degrader et la position des A */
 #navbar{
