@@ -3,12 +3,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/preferences.css">
     <title>Préférences</title>
 </head>
 <body>
         <header>
-        <a href="./index.php">click</a>
+            <a href="./index.php">
             <svg
                 class="image-1-1"
                 width="99"
@@ -44,9 +47,14 @@
                     />
                 </defs>
             </svg>
+            </a>
         </header>
 
     <main>
+    <nav id="navbar">
+            <a href="./index.php">Acceuil</a>
+            <a href="./preference.php">Préférences</a>
+    </nav>
         <!-- Container catégories -->
     <section>
         <div class="container-categories">
@@ -103,6 +111,10 @@
     </main>
 
     <footer>
+        <div class="reseaux">
+                <div><p>Suivez nous <br> sur les reseaux sociaux</p></div>
+                <div class="reseaux-sociaux"><img src="./assets/img/FB-white.png" alt=""><img src="./assets/img/Insta-white.png" alt=""><img src="./assets/img/LinkInd-white.png" alt=""><img src="./assets/img/Twitter-white.png" alt=""></div>
+        </div>
         <div class="container-dark-part-footer">
             <div class="nav-dark-part-footer">
                 <div>
