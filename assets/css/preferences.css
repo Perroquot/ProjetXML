@@ -76,7 +76,7 @@ header{
     border: 1px solid #141414;
     padding: 1.5vh;
     margin-left: 2vh;
-    transition: .2s ease-in-out;
+    transition: .2s linear;
 }
 
 .button-valide:hover{
