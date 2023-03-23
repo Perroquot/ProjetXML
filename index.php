@@ -23,6 +23,7 @@ $titles = $xml->xpath('//title');
 </head>
 <body>
     <header>
+        
     </header>
 
     <!-- Container catégories -->
@@ -36,7 +37,7 @@ $titles = $xml->xpath('//title');
             </div>
             <div class="card card2">
                 <img src="" alt="">
-                <h4><?php echo $titles[0] ?></h4>
+                <h4>France</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="card card3">
