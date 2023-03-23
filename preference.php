@@ -65,7 +65,7 @@
                         <h4>Sport</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <div>
-                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
+                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférences</label>
                                 <input type="checkbox" id="scales" name="scales">
                             </div>
                     </div>
@@ -76,7 +76,7 @@
                         <h4>Politique France</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <div>
-                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
+                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférences</label>
                                 <input type="checkbox" id="scales" name="scales">
                             </div>
                     </div>
@@ -87,7 +87,7 @@
                         <h4>Monde</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <div>
-                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
+                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférences</label>
                                 <input type="checkbox" id="scales" name="scales">
                             </div>
                     </div>
@@ -98,7 +98,7 @@
                         <h4>Culture</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <div>
-                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
+                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférences</label>
                                 <input type="checkbox" id="scales" name="scales">
                             </div>
                     </div>
