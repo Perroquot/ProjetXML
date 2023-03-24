@@ -24,7 +24,7 @@ header{
 }
 #entrer{
     padding-top: 2vw;
-    padding-left: 7vw;
+    margin-left: 7vw;
 }
 .reseaux{
     padding: 3%;
@@ -62,10 +62,6 @@ header{
     margin-left: 5%;
 }
 
-#entrer{
-    padding-top: 2%;
-    padding-left: 4%;
-}
 .reseaux{
     padding: 3%;
     background: linear-gradient(to right , #191B30 , #43243A);
@@ -152,4 +148,67 @@ header{
 .lst-footer li{
     list-style: none;
     line-height: 5vh;
+}
+
+.container-article{
+    background-color: white;
+    padding-left: 7vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    width: 50%;
+}
+
+.article-categories-row1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 5vh;
+    align-items: start;
+}
+
+.container-article h2{
+    color: black;
+    margin-left: 2vh;
+}
+
+.article-categories{
+    display: flex;
+    justify-content: center;
+}
+
+.article{
+    /* background-color: #F3F3F3; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 1vh;
+}
+
+.article-title{
+    /* padding: 1.5vh; */
+    font-size: .8em;
+    width: 300px;
+}
+
+.article img{
+    width: 300px;
+    margin: 0;
+}
+.article-categories-row2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: start;
+}
+.article5 img{
+    height: 130.67px;
+}
+.article6 img{
+    height: 130.67px;
+}
+.article4 img{
+    /* padding-top: 2.4vh; */
+}
+.article3 img{
+    /* padding-top: 2.4vh; */
 }
