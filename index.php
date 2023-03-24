@@ -30,6 +30,7 @@
             </defs>
         </svg>
     </header>
+</header>
     <main>
         <nav id="navbar">
             <a href="#">Acceuil</a>
@@ -55,22 +56,25 @@
         <div class="container-categories">
             <h2>Catégories :</h2>
             <div class="card-categories">
+
               <div class="media-1">
-                 <div class="card card1">
+
+                    <div class="card card1">
+
                     <img src="./assets/img/Rectangle 164.png" alt="">
                     <div class="card-text">
                         <h4>Sport</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
-                <div class="card card2">
-                    <img src="./assets/img/Rectangle 166.png" alt="">
-                    <div class="card-text">
+                    <div class="card card2">
+                        <img src="./assets/img/Rectangle 166.png" alt="">
+                        <div class="card-text">
                         <h4>Politique France</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                </div>
-                </div>    
+                    </div> 
+              </div>
                 <div class="media-2">
                 <div class="card card3">
                     <img src="./assets/img/Rectangle_168.png" alt="">
@@ -90,7 +94,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <!-- <footer>
         <div class="reseaux">
             <div><p>Suivez nous <br> sur les reseaux sociaux</p></div>
             <div class="reseaux-sociaux"><img src="./assets/img/FB-white.png" alt=""><img src="./assets/img/Insta-white.png" alt=""><img src="./assets/img/LinkInd-white.png" alt=""><img src="./assets/img/Twitter-white.png" alt=""></div>
@@ -114,12 +118,69 @@
                         <li>Accueil</li>
                         <li>Préférences</li>
                     
+
+                </div>
+                <div class="card card2">
+                    <img src="./assets/img/Rectangle 166.png" alt="">
+                    <div class="card-text">
+                        <h4>Politique France</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="card card3">
+                    <img src="./assets/img/Rectangle 168.png" alt="">
+                    <div class="card-text">
+                        <h4>Monde</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="card card4">
+                    <img src="./assets/img/Rectangle 170.png" alt="">
+                    <div class="card-text">
+                        <h4>Culture</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 - La Manews tous droits résérvés</p>
+            </div>
+        </div> -->
+    <footer>
+        <div class="reseaux">
+            <div><p>Suivez nous <br> sur les reseaux sociaux</p></div>
+            <div class="reseaux-sociaux"><img src="./assets/img/FB-white.png" alt=""><img src="./assets/img/Insta-white.png" alt=""><img src="./assets/img/LinkInd-white.png" alt=""><img src="./assets/img/Twitter-white.png" alt=""></div>
+        </div>
+
+        <div class="container-dark-part-footer">
+            <div class="nav-dark-part-footer">
+                <div>
+                    <img src="./assets/img/logo.png" alt="">
+                </div>
+                <div class="lst-footer categories-footer">
+                    <ul>
+                        <li><span>Catégorie</span></li>
+                        <li>Sport</li>
+                        <li>Politique France</li>
+                        <li>Monde</li>
+                        <li>Culture</li>
+                    </ul>
+                </div>
+
+                <div class="lst-footer navigation-footer">
+                    <ul>
+                        <li><span>Navigation</span></li>
+                        <li>Accueil</li>
+                        <li>Préférences</li>
+                    </ul>
                 </div>
             </div>
             <div class="copyright">
                 <p>© 2023 - La Manews tous droits résérvés</p>
             </div>
         </div>
+
     </footer>
 </body>
 </html>

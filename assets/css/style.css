@@ -9,6 +9,8 @@ body{
 
 
 /* partie pour les categories */
+
+
 .container-categories{
     background-color: #141414;
     padding-left: 7vw;
@@ -45,6 +47,7 @@ body{
 .card img{
     width: 100%;
 }
+
 
 /* Categories pour le responsive */
 .media-1{
@@ -90,6 +93,7 @@ body{
 .lst-footer li{
     list-style: none;
     line-height: 5vh;
+
 }
 
 header{
@@ -255,6 +259,8 @@ header{
             display: flex;
             width: 100%;
         }
+        .pub-manu{
+            display: none;
+        }
     }
 }
-
