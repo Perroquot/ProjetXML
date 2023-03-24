@@ -103,7 +103,7 @@ header{
 }
 
 /* Romain Wybo */
-.container-categories{
+.container-categories1{
     background-color: #141414;
     padding-left: 7vw;
     padding-right: 7vw;
@@ -111,7 +111,7 @@ header{
     padding-bottom: 2vw;
 }
 
-.container-categories h2{
+.container-categories1 h2{
     color: white;
     margin-left: 2vh;
 }

@@ -73,7 +73,7 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
     </main> 
     <!-- Container catégories -->
     <section>
-        <div class="container-categories">
+        <div class="container-categories1">
             <h2>Catégories :</h2>
             <div class="card-categories">
                 <div class="card card1">
@@ -105,7 +105,7 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
     </section>
     <div class="container-article">
         <h2>Article : </h2>
