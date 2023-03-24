@@ -17,7 +17,7 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
 
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"class="<?= $theme ?>">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -201,5 +201,6 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
             </div>
         </div>
     </footer>
+    <!-- <script type="text/javascript" src="/assets/js/script.js"></script> -->
 </body>
 </html>
