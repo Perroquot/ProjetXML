@@ -383,7 +383,7 @@ header{
 }
 
 .container-article{
-    background-color: white;
+    /* background-color: white; */
     padding-left: 7vw;
     padding-top: 2vw;
     padding-bottom: 2vw;
@@ -392,14 +392,12 @@ header{
 
 .article-categories-row1{
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
     padding-bottom: 5vh;
     align-items: start;
 }
 
 .container-article h2{
-    color: black;
     margin-left: 2vh;
 }
 
