@@ -23,6 +23,8 @@ header{
 #entrer{
     padding-top: 2%;
     padding-left: 4%;
+    display: flex;
+    justify-content: space-around;
 }
 .reseaux{
     padding: 3%;

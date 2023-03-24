@@ -17,11 +17,7 @@ function get_user_pref(){
     // Vérifie si le cookie "darkmode" est défini
     if (isset($_COOKIE['darkmode']) && $_COOKIE['darkmode'] == '1') {
         // Si le cookie est défini et sa valeur est 1, applique le mode sombre
-<<<<<<< Updated upstream
-        echo '<style>body{ background-color: #141414;} #entrer{color: #fff} .container-categories1{background-color: #000000!important;}</style>';
-=======
-        echo '<style>body{ background-color: #141414;} #entrer{color: #fff} .container-categories{ background-color: black;} .container-article{color:white;} .container-article h2{color:white;}</style>';
->>>>>>> Stashed changes
+        echo '<style>body{ background-color: #141414;} #entrer{color: #fff} .container-categories1{background-color: #000000!important;} .container-article{color:white;} .container-article h2{color:white;}</style>';
     } else {
         // Sinon, applique le mode clair
         echo '<style>body { background-color: #fff; color: #141414; }</style>';
