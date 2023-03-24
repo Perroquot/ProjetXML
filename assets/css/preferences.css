@@ -26,6 +26,8 @@ header{
     margin-left: 7vw;
     position: relative;
     transition: .2s ease-in-out;
+
+    
 }
 
 #navbar a::after{
