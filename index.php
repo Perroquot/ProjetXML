@@ -4,7 +4,6 @@ require_once 'fonction.php';
 
 save_user_pref();
 $theme = get_user_pref();
-
 ?>
 
 <!DOCTYPE html>
