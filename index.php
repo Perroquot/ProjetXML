@@ -1,10 +1,4 @@
 <?php 
-
-<<<<<<< Updated upstream
-save_user_pref();
-$theme = get_user_pref();
-
-=======
 session_start();
 require_once 'fonction.php';
 
@@ -12,7 +6,6 @@ save_user_pref();
 $theme = get_user_pref();
 
 
->>>>>>> Stashed changes
 $xml_sport = simplexml_load_file('http://www.lepoint.fr/sport/rss.xml');
 $titles_sport = $xml_sport->xpath('//item/title');
 $img_sport = $xml_sport->xpath('//item/enclosure/@url');
