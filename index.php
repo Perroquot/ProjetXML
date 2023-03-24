@@ -34,17 +34,19 @@
         <nav id="navbar">
             <a href="#">Acceuil</a>
             <a href="./preference.php">Préférences</a>
-            <i class="gg-dark-mode"></i>
         </nav>
 
         <section id="entrer">
-            <div>
-                <h1>Title de l'article</h1>
+            <div class="article-start">
+                <div>
+                    <h1>Title de l'article</h1>
+                </div>
+                <div class="sport">
+                <img src="./assets/img/Mbappe.png" alt="mbappé paris">
+                </div>
+                <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
             </div>
-            <div class="sport">
-            <img src="./assets/img/Mbappe.png" alt="mbappé paris">
-            </div>
-            <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+            <div class="pub"><a href="https://lamanu.fr/" target="_blank"><img src="./assets/img/miniature-menu-la-manu-jpo-2023.jpg" alt="" class="pub-manu"></a></div>
         </section>
 
     </main> 
