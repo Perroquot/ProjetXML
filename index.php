@@ -1,6 +1,14 @@
-<?php ?>
+<?php
+session_start();
+require_once 'fonction.php';
+
+save_user_pref();
+$theme = get_user_pref();
+
+?>
+
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"class="<?= $theme ?>">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -114,5 +122,6 @@
             </div>
         </div>
     </footer>
+    <!-- <script type="text/javascript" src="/assets/js/script.js"></script> -->
 </body>
 </html>

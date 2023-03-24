@@ -1,3 +1,11 @@
+<?php 
+session_start();
+require_once 'fonction.php';
+
+save_user_pref();
+$theme = get_user_pref();
+?>
+
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/preferences.css">
     <title>Préférences</title>
 </head>
@@ -54,6 +63,12 @@
     <nav id="navbar">
             <a href="./index.php">Accueil</a>
             <a href="./preference.php">Préférences</a>
+
+            <?php if (isset($_COOKIE['darkmode']) && $_COOKIE['darkmode'] == '1') { ?>
+                <button class="dark-mode-btn" onclick="window.location.href = '?lightmode=1'"><i class="fas fa-sun"></i></button>
+                <?php } else { ?>
+                <button class="dark-mode-btn" onclick="window.location.href = '?darkmode=1'"><i class="fas fa-moon"></i></button>
+            <?php } ?>
     </nav>
         <!-- Container catégories -->
     <section>
