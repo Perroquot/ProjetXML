@@ -63,15 +63,12 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
         <section id="entrer">
             <div class="article-start">
                 <div>
-                    <h1>Title de l'article</h1>
+                    <h1><?php echo $titles_sport[3]?></h1>
                 </div>
                 <div>
-                    <img src="./assets/img/Mbappe.png" alt="mbappé paris">
+                    <img src="<?php echo $img_sport[3]?>" alt="mbappé paris">
                 </div>
 
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
-            </div>
             <!-- <div class="pub"><a href="https://lamanu.fr/" target="_blank"><img src="./assets/img/pub-lamanu.png" alt="" class="pub-manu"></a></div> -->
         </section>
 
