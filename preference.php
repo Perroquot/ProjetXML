@@ -1,34 +1,12 @@
 <?php
 
-$user_fav_sport="sport";
-$user_fav_politique="politique";
-$user_fav_culture="culture";
-$user_fav_monde="monde";
-$value="checked='checked'";
-setcookie($user_fav_sport,$value,strtotime('1 year'));
-setcookie($user_fav_politique,$value,strtotime('1 year'));
-setcookie($user_fav_culture,$value,strtotime('1 year'));
-setcookie($user_fav_monde,$value,strtotime('1 year'));
-    if (isset($_POST['user_fav_sport'])){ 
-        $value = 'checked="checked"';
-    }elseif (isset($_POST['user_fav_politique'])){ 
-        $value = 'checked="checked"';
-    }elseif (isset($_POST['user_fav_culture'])){ 
-        $value = 'checked="checked"';
-    }elseif (isset($_POST['user_fav_monde'])){ 
-        $value = 'checked="checked"';
-    }
-if(isset($_COOKIE['user_fav_sport'])){
-        echo 'vous avez choisi la catégorie' .$_COOKIE['user_fav_sport'];   
-}elseif(isset($_COOKIE['user_fav_politique'])){
-        echo 'vous avez choisi la catégorie' .$_COOKIE['user_fav_politique'];
-}elseif(isset($_COOKIE['user_fav_culture'])){
-        echo 'vous avez choisi la catégorie' .$_COOKIE['user_fav_culture'];
-}elseif(isset($_COOKIE['user_fav_monde'])){
-    echo 'vous avez choisi la catégorie' .$_COOKIE['user_fav_monde'];
-}
+$check_list= filter_input(INPUT_POST, 'check_list' , FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY );
+var_dump($check_list);
+setcookie('user_favorite',json_encode($check_list), strtotime('1 year'));
+
 
 ?>
+
 
 <html lang="fr">
 <head>
@@ -89,56 +67,59 @@ if(isset($_COOKIE['user_fav_sport'])){
     </nav>
         <!-- Container catégories -->
     <section>
-        <div class="container-categories">
-            <div class="card-categories">
-                <div class="card card1">
-                    <img src="./assets/img/Rectangle 164.png" alt="">
-                    <div class="card-text">
-                        <h4>Sport</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <div>
-                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
-                                <input type="checkbox" id="scales" name="sport">
-                            </div>
+        <form method="post">
+            <div class="container-categories">
+                <div class="card-categories">
+                    <div class="card card1">
+                        <img src="./assets/img/Rectangle 164.png" alt="">
+                        <div class="card-text">
+                            <h4>Sport</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div>
+                                <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
+                                    <input type="checkbox" id="scales"  name="check_list[]" value="sport">
+                                </div>
+                        </div>
+                    </div>
+                    <div class="card card2">
+                        <img src="./assets/img/Rectangle 166.png" alt="">
+                        <div class="card-text">
+                            <h4>Politique France</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div>
+                                <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
+                                    <input type="checkbox" id="scales" name="check_list[]" value="politique">
+                                </div>
+                        </div>
+                    </div>
+                    <div class="card card3">
+                        <img src="./assets/img/Rectangle 168.png" alt="">
+                        <div class="card-text">
+                            <h4>Monde</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div>
+                                <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
+                                    <input type="checkbox" id="scales" name="check_list[]" value="monde">
+                                </div>
+                        </div>
+                    </div>
+                    <div class="card card4">
+                        <img src="./assets/img/Rectangle 170.png" alt="">
+                        <div class="card-text">
+                            <h4>Culture</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div>
+                                <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
+                                    <input type="checkbox" id="scales" name="check_list[]" value="culture">
+                                </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card card2">
-                    <img src="./assets/img/Rectangle 166.png" alt="">
-                    <div class="card-text">
-                        <h4>Politique France</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <div>
-                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
-                                <input type="checkbox" id="scales" name="politique">
-                            </div>
-                    </div>
-                </div>
-                <div class="card card3">
-                    <img src="./assets/img/Rectangle 168.png" alt="">
-                    <div class="card-text">
-                        <h4>Monde</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <div>
-                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
-                                <input type="checkbox" id="scales" name="monde">
-                            </div>
-                    </div>
-                </div>
-                <div class="card card4">
-                    <img src="./assets/img/Rectangle 170.png" alt="">
-                    <div class="card-text">
-                        <h4>Culture</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <div>
-                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
-                                <input type="checkbox" id="scales" name="culture">
-                            </div>
-                    </div>
-                </div>
+                <button class="button-valide" type="submit">Valider</button>
             </div>
-             <button class="button-valide" type="button">Valider</button>
-        </div>
+        </form>
     </section>
+    
     </main>
 
     <footer>
