@@ -41,7 +41,47 @@ header{
     justify-content: space-evenly;
 }
 
-/* container catégories */
+/* Romain Laroche */
+header{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: #141414;
+}
+/* barre de recherche avec le degrader et la position des A */
+#navbar{
+    padding: 1%;
+    background: linear-gradient(to right , #191B30 , #43243A);
+    display: flex;
+    justify-content: start;
+}
+
+#navbar a{
+    color: white;
+    text-decoration: none;
+    margin-left: 5%;
+}
+
+#entrer{
+    padding-top: 2%;
+    padding-left: 4%;
+}
+.reseaux{
+    padding: 3%;
+    background: linear-gradient(to right , #191B30 , #43243A);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+
+.reseaux-sociaux{
+    width: 13vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Romain Wybo */
 .container-categories{
     background-color: #141414;
     padding-left: 7vw;
@@ -84,20 +124,20 @@ header{
 .container-dark-part-footer{
     background-color: #141414;
     color: white;
-    padding-left: 7vw;
-    padding-right: 7vw;
-    padding-top: 5vw;
-    padding-bottom: 2vw;
 }
 
 .nav-dark-part-footer{
     display: flex;
     gap: 5vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 5vw;
 }
 
 .copyright{
     display: flex;
     justify-content: center;
+    background: linear-gradient(to right , #191B30 , #43243A);
 }
 
 .lst-footer span{

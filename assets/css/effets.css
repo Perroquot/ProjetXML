@@ -4,7 +4,7 @@ header{
     display: flex;
     justify-content: center;
     padding: 2%;
-    background-color: black;
+    background-color: #141414;
 }
 /* barre de recherche avec le degrader et la position des A */
 #navbar{
