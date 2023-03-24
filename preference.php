@@ -1,14 +1,26 @@
-<html lang="fr">
+<?php 
+session_start();
+require_once 'fonction.php';
+
+save_user_pref();
+$theme = get_user_pref();
+?>
+
+<html lang="fr"class="<?= $theme ?>">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/preferences.css">
     <title>Préférences</title>
 </head>
 <body>
-    <main>
         <header>
+            <a href="./index.php">
             <svg
                 class="image-1-1"
                 width="99"
@@ -44,7 +56,106 @@
                     />
                 </defs>
             </svg>
+            </a>
         </header>
+
+    <main>
+    <nav id="navbar">
+            <a href="./index.php">Accueil</a>
+            <a href="./preference.php">Préférences</a>
+
+            <?php if (isset($_COOKIE['darkmode']) && $_COOKIE['darkmode'] == '1') { ?>
+                <button class="dark-mode-btn" onclick="window.location.href = '?lightmode=1'"><i class="fas fa-sun"></i></button>
+                <?php } else { ?>
+                <button class="dark-mode-btn" onclick="window.location.href = '?darkmode=1'"><i class="fas fa-moon"></i></button>
+            <?php } ?>
+    </nav>
+        <!-- Container catégories -->
+    <section>
+        <div class="container-categories">
+            <div class="card-categories">
+                <div class="card card1">
+                    <img src="./assets/img/Rectangle 164.png" alt="">
+                    <div class="card-text">
+                        <h4>Sport</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div>
+                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférences</label>
+                                <input type="checkbox" id="scales" name="scales">
+                            </div>
+                    </div>
+                </div>
+                <div class="card card2">
+                    <img src="./assets/img/Rectangle 166.png" alt="">
+                    <div class="card-text">
+                        <h4>Société</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div>
+                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférences</label>
+                                <input type="checkbox" id="scales" name="scales">
+                            </div>
+                    </div>
+                </div>
+                <div class="card card3">
+                    <img src="./assets/img/Rectangle 168.png" alt="">
+                    <div class="card-text">
+                        <h4>Monde</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div>
+                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférences</label>
+                                <input type="checkbox" id="scales" name="scales">
+                            </div>
+                    </div>
+                </div>
+                <div class="card card4">
+                    <img src="./assets/img/Rectangle 170.png" alt="">
+                    <div class="card-text">
+                        <h4>Culture</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div>
+                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférences</label>
+                                <input type="checkbox" id="scales" name="scales">
+                            </div>
+                    </div>
+                </div>
+            </div>
+             <button class="button-valide" type="button">Valider</button>
+        </div>
+    </section>
     </main>
+
+    <footer>
+        <div class="reseaux">
+                <div><p>Suivez nous <br> sur les reseaux sociaux</p></div>
+                <div class="reseaux-sociaux"><img src="./assets/img/FB-white.png" alt=""><img src="./assets/img/Insta-white.png" alt=""><img src="./assets/img/LinkInd-white.png" alt=""><img src="./assets/img/Twitter-white.png" alt=""></div>
+        </div>
+        <div class="container-dark-part-footer">
+            <div class="nav-dark-part-footer">
+                <div>
+                    <img src="./assets/img/logo.png" alt="">
+                </div>
+                <div class="lst-footer categories-footer">
+                
+                        <li><span>Catégorie</span></li>
+                        <li>Sport</li>
+                        <li>Politique France</li>
+                        <li>Monde</li>
+                        <li>Culture</li>
+                    
+                </div>
+
+                <div class="lst-footer navigation-footer">
+                    
+                        <li><span>Navigation</span></li>
+                        <li>Accueil</li>
+                        <li>Préférences</li>
+                    
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 - La Manews tous droits résérvés</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

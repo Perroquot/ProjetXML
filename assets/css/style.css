@@ -4,14 +4,109 @@ body{
     box-sizing: border-box;
     font-family: 'poppins';
 }
-
-
-
+header{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: black;
+}
+#navbar{
+    padding: 1%;
+    background: linear-gradient(to right , #191B30 , #43243A);
+    display: flex;
+    justify-content: start;
+}
 
 /* partie pour les categories */
 
 
-.container-categories{
+#navbar a{
+    color: white;
+    text-decoration: none;
+    margin-left: 5%;
+}
+#entrer{
+    padding-top: 2vw;
+    margin-left: 7vw;
+}
+.reseaux{
+    padding: 3%;
+    background: linear-gradient(to right , #191B30 , #43243A);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+
+.reseaux-sociaux{
+    width: 13vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Romain Laroche */
+header{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: #141414;
+}
+/* barre de recherche avec le degrader et la position des A */
+#navbar{
+    padding: 1%;
+    background: linear-gradient(to right , #191B30 , #43243A);
+    display: flex;
+    justify-content: start;
+}
+
+#navbar a{
+    color: white;
+    text-decoration: none;
+    margin-left: 7vw;
+    position: relative;
+    transition: .2s ease-in-out;
+}
+
+#navbar a::after{
+    content: "";
+    transform-origin: 0 0;
+    transform: scaleX(0);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: white;
+    z-index: 1;
+    transition: .4s ease-in-out;
+}
+
+#navbar a:hover::after{
+    transform: scaleX(1);
+}
+
+
+#entrer{
+    padding-top: 2%;
+    padding-left: 4%;
+}
+.reseaux{
+    padding: 3%;
+    background: linear-gradient(to right , #191B30 , #43243A);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+
+.reseaux-sociaux{
+    width: 13vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Romain Wybo */
+.container-categories1{
     background-color: #141414;
     padding-left: 7vw;
     padding-right: 7vw;
@@ -19,7 +114,7 @@ body{
     padding-bottom: 2vw;
 }
 
-.container-categories h2{
+.container-categories1 h2{
     color: white;
     margin-left: 2vh;
 }
@@ -285,3 +380,62 @@ header{
         }
     }
 }
+}
+
+.container-article{
+    background-color: white;
+    padding-left: 7vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    width: 50%;
+}
+
+.article-categories-row1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 5vh;
+    align-items: start;
+}
+
+.container-article h2{
+    color: black;
+    margin-left: 2vh;
+}
+
+.article-categories{
+    display: flex;
+    justify-content: center;
+}
+
+.article{
+    /* background-color: #F3F3F3; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 1vh;
+}
+
+.article-title{
+    /* padding: 1.5vh; */
+    font-size: .8em;
+    width: 300px;
+}
+
+.article img{
+    width: 300px;
+    margin: 0;
+}
+.article-categories-row2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: start;
+}
+.article5 img{
+    height: 130.67px;
+}
+.article6 img{
+    height: 130.67px;
+}
+
