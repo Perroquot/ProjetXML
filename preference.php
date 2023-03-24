@@ -88,7 +88,7 @@ $theme = get_user_pref();
                 <div class="card card2">
                     <img src="./assets/img/Rectangle 166.png" alt="">
                     <div class="card-text">
-                        <h4>Politique France</h4>
+                        <h4>Société</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <div>
                             <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférences</label>
