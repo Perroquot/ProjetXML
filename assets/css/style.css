@@ -17,9 +17,6 @@ header{
     justify-content: start;
 }
 
-/* partie pour les categories */
-
-
 #navbar a{
     color: white;
     text-decoration: none;
@@ -143,18 +140,6 @@ header{
     width: 100%;
 }
 
-
-/* Categories pour le responsive */
-.media-1{
-    display: contents;
-}
-.media-2{
-    display: contents;
-}
-/* fin */
-/* fin de la partie catégories */
-
-
 /* dark part footer */
 
 .container-dark-part-footer{
@@ -188,198 +173,6 @@ header{
 .lst-footer li{
     list-style: none;
     line-height: 5vh;
-
-}
-
-header{
-    display: flex;
-    justify-content: center;
-    padding: 2%;
-    background-color: black;
-}
-/* barre de recherche avec le degrader et la position des A */
-#navbar{
-    padding: 1%;
-    background: linear-gradient(to right , #191B30 , #43243A);
-    display: flex;
-    justify-content: start;
-}
-
-#navbar a{
-    color: white;
-    text-decoration: none;
-    margin-left: 5%;
-}
-
-#entrer{
-    padding-top: 2%;
-    padding-left: 4%;
-    display: flex;
-    justify-content: space-around;
-}
-
-
-/* test pub */
-.pub{
-    width: 20vw ;
-    height: 50vh;
-}
-.pub-manu{
-    width: 20vw;
-    height: 80vh;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.reseaux{
-    padding: 3%;
-    background: linear-gradient(to right , #191B30 , #43243A);
-    display: flex;
-    justify-content: space-around;
-    color: white;
-    align-items: center;
-}
-
-.reseaux-sociaux{
-    width: 13vw;
-    display: flex;
-    justify-content: space-evenly;
-}
-/* hover reseaux */
-.social-fb:hover{
-    width: 3vw;
-    height: 5vh;
-    cursor: pointer;
-}
-.social-insta:hover{
-    width: 3vw;
-    height: 5vh;
-    cursor: pointer;
-}
-.social-link:hover{
-    width: 3vw;
-    height: 5vh;
-    cursor: pointer;
-}
-.social-twitter:hover{
-    width: 3vw;
-    height: 5vh;
-    cursor: pointer;
-}
-
-.sport{
-    width: 70vw;
-    height: auto;
-}
-
-@media screen {
-    @media only screen and (max-width:1024px) {
-        .container-categories{
-           padding: 0vh;
-        }
-        .card-categories{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .card{
-            width: 80vw;
-            height: 50vh;
-            display: block;
-        }
-            /* boutton valider */
-        .btn-valide{
-            padding: 1.5vh;
-            margin-left: 2vh;
-            margin-bottom:5vh;
-        }
-        /* footer */
-        .container-dark-part-footer{
-            background-color: #141414;
-            color: white;
-        }
-        .nav-dark-part-footer{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            text-align: center;
-            gap: 5vw;
-            padding-top: 4vh;
-            padding-bottom: 4vh;
-        }
-        .copyright{
-            text-align: center;
-        }
-        .lst-footer{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-        .sport img{
-            width: 90vw ;
-            display: flex;
-            justify-content: center;
-        }
-        #navbar{
-            padding: 2vh;
-        }
-        .reseaux{
-            padding: 3%;
-            background: linear-gradient(to right , #191B30 , #43243A);
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-        }
-        .reseaux-sociaux{
-            display: flex;
-            justify-content: space-evenly;
-        }
-        .reseaux-sociaux img{
-            margin: 1vh;
-        }
-        /* .media-1{
-            display: flex;
-            padding-bottom: 10px;
-        }
-        .media-2{
-            display: flex;
-            padding-bottom: 10vh;
-        } */
-        h2{
-            padding-top: 3vh;
-        }
-        #entrer{
-            padding-bottom: 5vh;
-        }
-        .media-1{
-            display: block;
-            display: flex;
-            width: 100%;
-        }
-        .media-2{
-            display: block;
-            display: flex;
-            width: 100%;
-        }
-        .pub-manu{
-            display: none;
-        }
-    }
-}
 }
 
 .container-article{
@@ -436,4 +229,3 @@ header{
 .article6 img{
     height: 130.67px;
 }
-

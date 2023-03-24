@@ -32,7 +32,6 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/dark-mode.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>ProjetXML</title>
@@ -58,20 +57,17 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
     </header>
     <main>
         <nav id="navbar">
-            <a href="#">Acceuil</a>
+            <a href="#">Accueil</a>
             <a href="./preference.php">Préférences</a>
         </nav>
         <section id="entrer">
-            <div class="article-start">
-                <div>
-                    <h1>Title de l'article</h1>
-                </div>
-                <div class="sport">
-                <img src="./assets/img/Mbappe.png" alt="mbappé paris">
-                </div>
-                <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+            <div>
+                <h1>Title de l'article</h1>
             </div>
-            <div class="pub"><a href="https://lamanu.fr/" target="_blank"><img src="./assets/img/miniature-menu-la-manu-jpo-2023.jpg" alt="" class="pub-manu"></a></div>
+            <div>
+            <img src="./assets/img/Mbappe.png" alt="mbappé paris">
+            </div>
+            <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
         </section>
 
     </main> 
@@ -80,69 +76,12 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
         <div class="container-categories1">
             <h2>Catégories :</h2>
             <div class="card-categories">
-
-              <div class="media-1">
-
-                    <div class="card card1">
-
+                <div class="card card1">
                     <img src="./assets/img/Rectangle 164.png" alt="">
                     <div class="card-text">
                         <h4>Sport</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-                    <div class="card card2">
-                        <img src="./assets/img/Rectangle 166.png" alt="">
-                        <div class="card-text">
-                        <h4>Politique France</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    </div> 
-              </div>
-                <div class="media-2">
-                <div class="card card3">
-                    <img src="./assets/img/Rectangle_168.png" alt="">
-                    <div class="card-text">
-                        <h4>Monde</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                </div>
-                <div class="card card4">
-                    <img src="./assets/img/Rectangle_170.png" alt="">
-                    <div class="card-text">
-                        <h4>Culture</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-                </div>    
-            </div>
-        </div>
-    </section>
-    <!-- <footer>
-        <div class="reseaux">
-            <div><p>Suivez nous <br> sur les reseaux sociaux</p></div>
-            <div class="reseaux-sociaux"><img src="./assets/img/FB-white.png" alt=""><img src="./assets/img/Insta-white.png" alt=""><img src="./assets/img/LinkInd-white.png" alt=""><img src="./assets/img/Twitter-white.png" alt=""></div>
-        </div>
-
-        <div class="container-dark-part-footer">
-            <div class="nav-dark-part-footer">
-                <div>
-                    <img src="./assets/img/logo.png" alt="">
-                </div>
-                <div class="lst-footer categories-footer">
-                        <li><span>Catégorie</span></li>
-                        <li>Sport</li>
-                        <li>Politique France</li>
-                        <li>Monde</li>
-                        <li>Culture</li>
-                </div>
-
-                <div class="lst-footer navigation-footer">
-                        <li><span>Navigation</span></li>
-                        <li>Accueil</li>
-                        <li>Préférences</li>
-                    
-
                 </div>
                 <div class="card card2">
                     <img src="./assets/img/Rectangle 166.png" alt="">
@@ -164,11 +103,8 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
                         <h4>Culture</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-
                 </div>
             </div>
-            <div class="copyright">
-                <p>© 2023 - La Manews tous droits résérvés</>
             </div>
     </section>
     <div class="container-article">
@@ -245,7 +181,7 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
     <footer>
         <div class="reseaux">
             <div><p>Suivez nous <br> sur les reseaux sociaux</p></div>
-            <div class="reseaux-sociaux"><img src="./assets/img/FB-white.png" alt="" class="social-fb"><img src="./assets/img/Insta-white.png" alt="" class="social-insta"><img src="./assets/img/LinkInd-white.png" alt="" class="social-link"><img src="./assets/img/Twitter-white.png" alt="" class="social-twitter"></div>
+            <div class="reseaux-sociaux"><img src="./assets/img/FB-white.png" alt=""><img src="./assets/img/Insta-white.png" alt=""><img src="./assets/img/LinkInd-white.png" alt=""><img src="./assets/img/Twitter-white.png" alt=""></div>
         </div>
         <div class="container-dark-part-footer">
             <div class="nav-dark-part-footer">
@@ -272,7 +208,6 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
                 <p>© 2023 - La Manews tous droits résérvés</p>
             </div>
         </div>
-
     </footer>
     <!-- <script type="text/javascript" src="/assets/js/script.js"></script> -->
 </body>
