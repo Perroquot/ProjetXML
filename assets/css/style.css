@@ -23,8 +23,29 @@ header{
 #navbar a{
     color: white;
     text-decoration: none;
-    margin-left: 5%;
+    margin-left: 7vw;
+    position: relative;
+    transition: .2s ease-in-out;
 }
+
+#navbar a::after{
+    content: "";
+    transform-origin: 0 0;
+    transform: scaleX(0);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: white;
+    z-index: 1;
+    transition: .4s ease-in-out;
+}
+
+#navbar a:hover::after{
+    transform: scaleX(1);
+}
+
 
 #entrer{
     padding-top: 2%;
