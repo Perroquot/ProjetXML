@@ -6,7 +6,7 @@ save_user_pref();
 $theme = get_user_pref();
 ?>
 
-<html lang="fr">
+<html lang="fr"class="<?= $theme ?>">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

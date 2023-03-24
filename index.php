@@ -1,4 +1,8 @@
 <?php 
+
+save_user_pref();
+$theme = get_user_pref();
+
 $xml_sport = simplexml_load_file('http://www.lepoint.fr/sport/rss.xml');
 $titles_sport = $xml_sport->xpath('//item/title');
 $img_sport = $xml_sport->xpath('//item/enclosure/@url');
@@ -14,6 +18,7 @@ $img_monde = $xml_monde->xpath('//item/media:content/@url');
 $xml_culture = simplexml_load_file('https://www.lepoint.fr/culture/rss.xml');
 $titles_culture = $xml_culture->xpath('//item/title');
 $img_culture = $xml_culture->xpath('//item/enclosure/@url')
+
 
 ?>
 <!DOCTYPE html>
