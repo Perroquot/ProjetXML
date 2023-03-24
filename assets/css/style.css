@@ -160,6 +160,27 @@ header{
     display: flex;
     justify-content: space-evenly;
 }
+/* hover reseaux */
+.social-fb:hover{
+    width: 3vw;
+    height: 5vh;
+    cursor: pointer;
+}
+.social-insta:hover{
+    width: 3vw;
+    height: 5vh;
+    cursor: pointer;
+}
+.social-link:hover{
+    width: 3vw;
+    height: 5vh;
+    cursor: pointer;
+}
+.social-twitter:hover{
+    width: 3vw;
+    height: 5vh;
+    cursor: pointer;
+}
 
 .sport{
     width: 70vw;

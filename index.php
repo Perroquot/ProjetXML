@@ -150,7 +150,7 @@
     <footer>
         <div class="reseaux">
             <div><p>Suivez nous <br> sur les reseaux sociaux</p></div>
-            <div class="reseaux-sociaux"><img src="./assets/img/FB-white.png" alt=""><img src="./assets/img/Insta-white.png" alt=""><img src="./assets/img/LinkInd-white.png" alt=""><img src="./assets/img/Twitter-white.png" alt=""></div>
+            <div class="reseaux-sociaux"><img src="./assets/img/FB-white.png" alt="" class="social-fb"><img src="./assets/img/Insta-white.png" alt="" class="social-insta"><img src="./assets/img/LinkInd-white.png" alt="" class="social-link"><img src="./assets/img/Twitter-white.png" alt="" class="social-twitter"></div>
         </div>
 
         <div class="container-dark-part-footer">
