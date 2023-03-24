@@ -55,7 +55,7 @@ $theme = get_user_pref();
     </main> 
     <!-- Container catégories -->
     <section>
-        <div class="container-categories">
+        <div class="container-categories1">
             <h2>Catégories :</h2>
             <div class="card-categories">
                 <div class="card card1">
@@ -87,7 +87,7 @@ $theme = get_user_pref();
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
     </section>
     <footer>
         <div class="reseaux">
