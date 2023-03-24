@@ -1,10 +1,19 @@
 <?php
 
 $check_list= filter_input(INPUT_POST, 'check_list' , FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY );
-var_dump($check_list);
+
 setcookie('user_favorite',json_encode($check_list), strtotime('1 year'));
+function check_cookies()
+{
+    if (isset($_COOKIE['user_favorite'])) {
+        $my_cookie_array = json_decode($_COOKIE['user_favorite']);
+        return $my_cookie_array;
+    } else {
+        return false;
+    }
+}
 
-
+$my_cookie_aray=check_cookies();
 ?>
 
 
@@ -77,7 +86,7 @@ setcookie('user_favorite',json_encode($check_list), strtotime('1 year'));
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <div>
                                 <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
-                                    <input type="checkbox" id="scales"  name="check_list[]" value="sport">
+                                    <input type="checkbox" id="scales"  name="check_list[]" value="sport" <?php if(in_array('sport',$my_cookie_aray)) echo 'checked';?>>
                                 </div>
                         </div>
                     </div>
@@ -88,7 +97,7 @@ setcookie('user_favorite',json_encode($check_list), strtotime('1 year'));
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <div>
                                 <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
-                                    <input type="checkbox" id="scales" name="check_list[]" value="politique">
+                                    <input type="checkbox" id="scales" name="check_list[]" value="politique" <?php if(in_array('politique',$my_cookie_aray)) echo 'checked';?>>
                                 </div>
                         </div>
                     </div>
@@ -99,7 +108,7 @@ setcookie('user_favorite',json_encode($check_list), strtotime('1 year'));
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <div>
                                 <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
-                                    <input type="checkbox" id="scales" name="check_list[]" value="monde">
+                                    <input type="checkbox" id="scales" name="check_list[]" value="monde" <?php if(in_array('monde',$my_cookie_aray)) echo 'checked';?>>
                                 </div>
                         </div>
                     </div>
@@ -110,7 +119,7 @@ setcookie('user_favorite',json_encode($check_list), strtotime('1 year'));
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <div>
                                 <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
-                                    <input type="checkbox" id="scales" name="check_list[]" value="culture">
+                                    <input type="checkbox" id="scales" name="check_list[]" value="culture" <?php if(in_array('culture',$my_cookie_aray)) echo 'checked';?>>
                                 </div>
                         </div>
                     </div>
