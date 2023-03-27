@@ -6,6 +6,22 @@ save_user_pref();
 $theme = get_user_pref();
 ?>
 
+$check_list= filter_input(INPUT_POST, 'check_list' , FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY );
+
+setcookie('user_favorite',json_encode($check_list), strtotime('1 year'));
+function check_cookies()
+{
+    if (isset($_COOKIE['user_favorite'])) {
+        $my_cookie_array = json_decode($_COOKIE['user_favorite']);
+        return $my_cookie_array;
+    } else {
+        return false;
+    }
+}
+
+$my_cookie_aray=check_cookies();
+?>
+
 <html lang="fr"class="<?= $theme ?>">
 <head>
     <meta charset="UTF-8">
@@ -72,6 +88,52 @@ $theme = get_user_pref();
     </nav>
         <!-- Container catégories -->
     <section>
+        <form method="post">
+            <div class="container-categories">
+                <div class="card-categories">
+                    <div class="card card1">
+                        <img src="./assets/img/Rectangle 164.png" alt="">
+                        <div class="card-text">
+                            <h4>Sport</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div>
+                                <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
+                                    <input type="checkbox" id="scales"  name="check_list[]" value="sport" <?php if(in_array('sport',$my_cookie_aray)) echo 'checked';?>>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="card card2">
+                        <img src="./assets/img/Rectangle 166.png" alt="">
+                        <div class="card-text">
+                            <h4>Politique France</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div>
+                                <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
+                                    <input type="checkbox" id="scales" name="check_list[]" value="politique" <?php if(in_array('politique',$my_cookie_aray)) echo 'checked';?>>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="card card3">
+                        <img src="./assets/img/Rectangle 168.png" alt="">
+                        <div class="card-text">
+                            <h4>Monde</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div>
+                                <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
+                                    <input type="checkbox" id="scales" name="check_list[]" value="monde" <?php if(in_array('monde',$my_cookie_aray)) echo 'checked';?>>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="card card4">
+                        <img src="./assets/img/Rectangle 170.png" alt="">
+                        <div class="card-text">
+                            <h4>Culture</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div>
+                                <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférence</label>
+                                    <input type="checkbox" id="scales" name="check_list[]" value="culture" <?php if(in_array('culture',$my_cookie_aray)) echo 'checked';?>>
+                                </div>
+                        </div>
         <div class="container-categories">
             <div class="card-categories">
                 <div class="card card1">
@@ -118,10 +180,11 @@ $theme = get_user_pref();
                             </div>
                     </div>
                 </div>
+                <button class="button-valide" type="submit">Valider</button>
             </div>
-             <button class="button-valide" type="button">Valider</button>
-        </div>
+        </form>
     </section>
+    
     </main>
 
     <footer>
