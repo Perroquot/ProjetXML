@@ -36,7 +36,7 @@ function save_user_pref()
             : 0;
 
         !is_null($userId)
-            ? setcookie("pref[$userId]", $mode, strtotime('1week'))
+            ? setcookie("pref[$userId]", $mode, strtotime('1 year'))
             : setcookie("pref[$userId]", $mode);
         // On force le rafraîchement de la page pour récupérer la nouvelle valeur du cookie.
         header('Refresh:0');
