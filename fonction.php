@@ -17,7 +17,7 @@ function get_user_pref(){
     // Vérifie si le cookie "darkmode" est défini
     if (isset($_COOKIE['darkmode']) && $_COOKIE['darkmode'] == '1') {
         // Si le cookie est défini et sa valeur est 1, applique le mode sombre
-        echo '<style>body{ background-color: #141414;} #entrer{color: #fff} .container-categories1{background-color: #000000!important;} .container-article{color:white;} .container-article h2{color:white;}</style>';
+        echo '<style>body{ background-color: #141414;} #entrer{color: #fff} .container-categories1{background-color: #000000!important;} .container-article{color:white;} .container-article h2{color:white;} .button-valide{background-color: white; color: black} .button-valide{background-color: #141414 !important; color: white !important; border: 1px solid white !important; transition: .2s linear !important;} .button-valide:hover{background-color: white !important; border: 1px solid white !important; color:black !important;} </style>';
     } else {
         // Sinon, applique le mode clair
         echo '<style>body { background-color: #fff; color: #141414; }</style>';
@@ -41,6 +41,23 @@ function save_user_pref()
         // On force le rafraîchement de la page pour récupérer la nouvelle valeur du cookie.
         header('Refresh:0');
         exit();
+    }
+}
+
+function save_user_fav()
+{
+$check_list= filter_input(INPUT_POST, 'check_list' , FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY );
+
+setcookie('user_favorite',json_encode($check_list), strtotime('1 year'));
+}
+
+function check_cookies()
+{
+    if (isset($_COOKIE['user_favorite'])) {
+        $my_cookie_array = json_decode($_COOKIE['user_favorite']);
+        return $my_cookie_array;
+    } else {
+        return false;
     }
 }
 

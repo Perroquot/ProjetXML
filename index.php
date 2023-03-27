@@ -187,7 +187,7 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
         </div>
         <div class="container-dark-part-footer">
             <div class="nav-dark-part-footer">
-                <div>
+                <div class=img-footer>
                     <img src="./assets/img/logo.png" alt="">
                 </div>
                 <div class="lst-footer categories-footer">
@@ -199,11 +199,9 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
                 </div>
 
                 <div class="lst-footer navigation-footer">
-                    <ul>
                         <li><span>Navigation</span></li>
                         <li>Accueil</li>
                         <li>Préférences</li>
-                    </ul>
                 </div>
             </div>
             <div class="copyright">

@@ -154,6 +154,7 @@ header{
     padding-left: 7vw;
     padding-right: 7vw;
     padding-top: 5vw;
+    margin-bottom: 5vw;
 }
 
 .copyright{
@@ -233,6 +234,10 @@ header{
 .pub{
     width: 20vw ;
     height: 50vh;
+}
+.img-footer{
+    display: flex;
+    align-items: center;
 }
 .pub-manu{
     width: 20vw;
