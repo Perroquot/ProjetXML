@@ -207,6 +207,7 @@ header{
     justify-content: center;
     flex-direction: column;
     margin-left: 3.5vh;
+    /* width: calc(100%/4); */
 }
 
 .article-title{
