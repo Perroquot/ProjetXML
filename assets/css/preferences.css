@@ -23,7 +23,35 @@ header{
 #navbar a{
     color: white;
     text-decoration: none;
-    padding-left: 7vw;
+    margin-left: 7vw;
+    position: relative;
+    transition: .2s ease-in-out;
+}
+
+#navbar a::after{
+    content: "";
+    transform-origin: 0 0;
+    transform: scaleX(0);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: white;
+    z-index: 1;
+    transition: .4s ease-in-out;
+}
+
+#navbar a:hover::after{
+    transform: scaleX(1);
+}
+
+/* dark mode btn */
+.dark-mode-btn{
+    background-color: white;
+    border: none;
+    border-radius: 100%;
+    margin-left: 64vw;
 }
 
 /* container catégories */
@@ -139,6 +167,16 @@ header{
     #navbar{
         padding: 2vh;
     }
+
+    /* dark mode btn */
+    .dark-mode-btn{
+        background-color: white;
+        border: none;
+        border-radius: 100%;
+        margin-left: 30vw;
+    }
+
+
     .container-categories{
        padding: 0vh;
     }

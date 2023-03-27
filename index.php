@@ -1,6 +1,31 @@
-<?php ?>
+<?php 
+session_start();
+require_once 'fonction.php';
+
+save_user_pref();
+$theme = get_user_pref();
+
+
+$xml_sport = simplexml_load_file('http://www.lepoint.fr/sport/rss.xml');
+$titles_sport = $xml_sport->xpath('//item/title');
+$img_sport = $xml_sport->xpath('//item/enclosure/@url');
+
+$xml_societe = simplexml_load_file('http://www.lepoint.fr/content/system/rss/24H/24H_doc.xml');
+$titles_societe = $xml_societe->xpath('//item/title');
+$img_societe = $xml_societe->xpath('//item/enclosure/@url');
+
+$xml_monde = simplexml_load_file('https://www.lefigaro.fr/rss/figaro_voyages.xml');
+$titles_monde = $xml_monde->xpath('//item/title');
+$img_monde = $xml_monde->xpath('//item/media:content/@url');
+
+$xml_culture = simplexml_load_file('https://www.lepoint.fr/culture/rss.xml');
+$titles_culture = $xml_culture->xpath('//item/title');
+$img_culture = $xml_culture->xpath('//item/enclosure/@url')
+
+
+?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"class="<?= $theme ?>">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,19 +61,21 @@
             <a href="./preference.php">Préférences</a>
         </nav>
         <section id="entrer">
-            <div>
-                <h1>Title de l'article</h1>
-            </div>
-            <div>
-            <img src="./assets/img/Mbappe.png" alt="mbappé paris">
-            </div>
-            <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+            <div class="article-start">
+                <div>
+                    <h1><?php echo $titles_sport[3]?></h1>
+                </div>
+                <div>
+                    <img src="<?php echo $img_sport[3]?>" alt="mbappé paris">
+                </div>
+
+            <!-- <div class="pub"><a href="https://lamanu.fr/" target="_blank"><img src="./assets/img/pub-lamanu.png" alt="" class="pub-manu"></a></div> -->
         </section>
 
     </main> 
     <!-- Container catégories -->
     <section>
-        <div class="container-categories">
+        <div class="container-categories1">
             <h2>Catégories :</h2>
             <div class="card-categories">
                 <div class="card card1">
@@ -61,7 +88,7 @@
                 <div class="card card2">
                     <img src="./assets/img/Rectangle 166.png" alt="">
                     <div class="card-text">
-                        <h4>Politique France</h4>
+                        <h4>Société</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
@@ -80,14 +107,84 @@
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
     </section>
+    <div class="container-article">
+        <h2>Article : </h2>
+        <div class="article-categories-row1">
+            <div class="article article1">
+                <div class="article-img">
+                    <img src="<?php echo $img_sport[0] ?>">
+                </div>
+                <div class="article-title">
+                    <?php echo $titles_sport[0] ?>
+                </div>
+            </div>
+            <div class="article article2">
+                <div class="article-img">
+                    <img src="<?php echo $img_sport[1] ?>">
+                </div>
+                <div class="article-title">
+                    <?php echo $titles_sport[1] ?>
+                </div>
+            </div>
+            <div class="article article3">
+                <div class="article-img">
+                    <img src="<?php echo $img_societe[0] ?>">
+                </div>
+                <div class="article-title">
+                    <?php echo $titles_societe[0] ?>
+                </div>
+            </div>
+            <div class="article article4">
+                <div class="article-img">
+                    <img src="<?php echo $img_societe[1] ?>">
+                </div>
+                <div class="article-title">
+                    <?php echo $titles_societe[1] ?>
+                </div>
+            </div>
+        </div>
+        <div class="article-categories-row2">
+            <div class="article article5">
+                <div class="article-img">
+                    <img src="<?php echo $img_monde[0] ?>">
+                </div>
+                <div class="article-title">
+                    <?php echo $titles_monde[0] ?>
+                </div>
+            </div>
+            <div class="article article6">
+                <div class="article-img">
+                    <img src="<?php echo $img_monde[1] ?>">
+                </div>
+                <div class="article-title">
+                    <?php echo $titles_monde[1] ?>
+                </div>
+            </div>
+            <div class="article article7">
+                <div class="article-img">
+                    <img src="<?php echo $img_culture[0] ?>">
+                </div>
+                <div class="article-title">
+                    <?php echo $titles_culture[0] ?>
+                </div>
+            </div>
+            <div class="article article8">
+                <div class="article-img">
+                    <img src="<?php echo $img_culture[1] ?>">
+                </div>
+                <div class="article-title">
+                    <?php echo $titles_culture[1] ?>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="reseaux">
             <div><p>Suivez nous <br> sur les reseaux sociaux</p></div>
             <div class="reseaux-sociaux"><img src="./assets/img/FB-white.png" alt=""><img src="./assets/img/Insta-white.png" alt=""><img src="./assets/img/LinkInd-white.png" alt=""><img src="./assets/img/Twitter-white.png" alt=""></div>
         </div>
-
         <div class="container-dark-part-footer">
             <div class="nav-dark-part-footer">
                 <div>
@@ -114,5 +211,6 @@
             </div>
         </div>
     </footer>
+    <!-- <script type="text/javascript" src="/assets/js/script.js"></script> -->
 </body>
 </html>

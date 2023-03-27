@@ -4,6 +4,42 @@ body{
     box-sizing: border-box;
     font-family: 'poppins';
 }
+header{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: black;
+}
+#navbar{
+    padding: 1%;
+    background: linear-gradient(to right , #191B30 , #43243A);
+    display: flex;
+    justify-content: start;
+}
+
+#navbar a{
+    color: white;
+    text-decoration: none;
+    margin-left: 5%;
+}
+#entrer{
+    padding-top: 2vw;
+    margin-left: 7vw;
+}
+.reseaux{
+    padding: 3%;
+    background: linear-gradient(to right , #191B30 , #43243A);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+
+.reseaux-sociaux{
+    width: 13vw;
+    display: flex;
+    justify-content: space-evenly;
+}
 
 /* Romain Laroche */
 header{
@@ -23,12 +59,34 @@ header{
 #navbar a{
     color: white;
     text-decoration: none;
-    margin-left: 5%;
+    margin-left: 7vw;
+    position: relative;
+    transition: .2s ease-in-out;
 }
+
+#navbar a::after{
+    content: "";
+    transform-origin: 0 0;
+    transform: scaleX(0);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: white;
+    z-index: 1;
+    transition: .4s ease-in-out;
+}
+
+#navbar a:hover::after{
+    transform: scaleX(1);
+}
+
 
 #entrer{
     padding-top: 2%;
     padding-left: 4%;
+    margin-bottom: 10vh;
 }
 .reseaux{
     padding: 3%;
@@ -46,7 +104,7 @@ header{
 }
 
 /* Romain Wybo */
-.container-categories{
+.container-categories1{
     background-color: #141414;
     padding-left: 7vw;
     padding-right: 7vw;
@@ -54,7 +112,7 @@ header{
     padding-bottom: 2vw;
 }
 
-.container-categories h2{
+.container-categories1 h2{
     color: white;
     margin-left: 2vh;
 }
@@ -116,4 +174,176 @@ header{
 .lst-footer li{
     list-style: none;
     line-height: 5vh;
+}
+
+.container-article{
+    /* background-color: white; */
+    padding-left: 7vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    width: 50%;
+}
+
+.article-categories-row1{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5vh;
+    align-items: start;
+}
+
+.container-article h2{
+    margin-left: 2vh;
+}
+
+.article-categories{
+    display: flex;
+    justify-content: center;
+}
+
+.article{
+    /* background-color: #F3F3F3; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 3.5vh;
+}
+
+.article-title{
+    /* padding: 1.5vh; */
+    font-size: .8em;
+    width: 300px;
+}
+
+.article img{
+    width: 300px;
+    margin: 0;
+}
+.article-categories-row2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: start;
+}
+.article5 img{
+    height: 130.67px;
+}
+.article6 img{
+    height: 130.67px;
+}
+.pub{
+    width: 20vw ;
+    height: 50vh;
+}
+.pub-manu{
+    width: 20vw;
+    height: 80vh;
+}
+.media-1{
+    display: contents;
+}
+.media-2{
+    display: contents;
+}
+@media screen {
+    @media only screen and (max-width:1024px) {
+        .container-categories{
+           padding: 0vh;
+        }
+        .card-categories{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .card{
+            width: 80vw;
+            height: 50vh;
+            display: block;
+        }
+            /* boutton valider */
+        .btn-valide{
+            padding: 1.5vh;
+            margin-left: 2vh;
+            margin-bottom:5vh;
+        }
+        /* footer */
+        .container-dark-part-footer{
+            background-color: #141414;
+            color: white;
+        }
+        .nav-dark-part-footer{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            gap: 5vw;
+            padding-top: 4vh;
+            padding-bottom: 4vh;
+        }
+        .copyright{
+            text-align: center;
+        }
+        .lst-footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .sport img{
+            width: 90vw ;
+            display: flex;
+            justify-content: center;
+        }
+        #navbar{
+            padding: 2vh;
+        }
+        .reseaux{
+            padding: 3%;
+            background: linear-gradient(to right , #191B30 , #43243A);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .reseaux-sociaux{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .reseaux-sociaux img{
+            margin: 1vh;
+        }
+        h2{
+            padding-top: 3vh;
+        }
+        #entrer{
+            padding-bottom: 5vh;
+        }
+        .media-1{
+            display: block;
+            display: flex;
+            width: 100%;
+        }
+        .media-2{
+            display: block;
+            display: flex;
+            width: 100%;
+        }
+        .pub-manu{
+            display: none;
+        }
+        .article-categories-row1{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: -5vh;
+        }
+        
+        .article-categories-row2{
+            display: flex;
+            flex-direction: column;
+        }
+        .article{
+            margin-bottom: 2vh;
+        }
+    }
 }

@@ -1,4 +1,10 @@
-<?php
+<?php 
+session_start();
+require_once 'fonction.php';
+
+save_user_pref();
+$theme = get_user_pref();
+?>
 
 $check_list= filter_input(INPUT_POST, 'check_list' , FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY );
 
@@ -16,8 +22,7 @@ function check_cookies()
 $my_cookie_aray=check_cookies();
 ?>
 
-
-<html lang="fr">
+<html lang="fr"class="<?= $theme ?>">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,6 +30,7 @@ $my_cookie_aray=check_cookies();
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/preferences.css">
     <title>Préférences</title>
 </head>
@@ -73,6 +79,12 @@ $my_cookie_aray=check_cookies();
     <nav id="navbar">
             <a href="./index.php">Accueil</a>
             <a href="./preference.php">Préférences</a>
+
+            <?php if (isset($_COOKIE['darkmode']) && $_COOKIE['darkmode'] == '1') { ?>
+                <button class="dark-mode-btn" onclick="window.location.href = '?lightmode=1'"><i class="fas fa-sun"></i></button>
+                <?php } else { ?>
+                <button class="dark-mode-btn" onclick="window.location.href = '?darkmode=1'"><i class="fas fa-moon"></i></button>
+            <?php } ?>
     </nav>
         <!-- Container catégories -->
     <section>
@@ -122,6 +134,50 @@ $my_cookie_aray=check_cookies();
                                     <input type="checkbox" id="scales" name="check_list[]" value="culture" <?php if(in_array('culture',$my_cookie_aray)) echo 'checked';?>>
                                 </div>
                         </div>
+        <div class="container-categories">
+            <div class="card-categories">
+                <div class="card card1">
+                    <img src="./assets/img/Rectangle 164.png" alt="">
+                    <div class="card-text">
+                        <h4>Sport</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div>
+                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférences</label>
+                                <input type="checkbox" id="scales" name="scales">
+                            </div>
+                    </div>
+                </div>
+                <div class="card card2">
+                    <img src="./assets/img/Rectangle 166.png" alt="">
+                    <div class="card-text">
+                        <h4>Société</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div>
+                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférences</label>
+                                <input type="checkbox" id="scales" name="scales">
+                            </div>
+                    </div>
+                </div>
+                <div class="card card3">
+                    <img src="./assets/img/Rectangle 168.png" alt="">
+                    <div class="card-text">
+                        <h4>Monde</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div>
+                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférences</label>
+                                <input type="checkbox" id="scales" name="scales">
+                            </div>
+                    </div>
+                </div>
+                <div class="card card4">
+                    <img src="./assets/img/Rectangle 170.png" alt="">
+                    <div class="card-text">
+                        <h4>Culture</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div>
+                            <label for="scales" class="check-label">Ajouter cette <br> catégorie à mes préférences</label>
+                                <input type="checkbox" id="scales" name="scales">
+                            </div>
                     </div>
                 </div>
                 <button class="button-valide" type="submit">Valider</button>
