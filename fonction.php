@@ -44,6 +44,8 @@ function save_user_pref()
     }
 }
 
+
+
 function set_user_fav()
 {
 $check_list= filter_input(INPUT_POST, 'check_list' , FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY );
