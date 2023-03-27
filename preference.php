@@ -4,7 +4,6 @@ require_once 'fonction.php';
 
 save_user_pref();
 $theme = get_user_pref();
-?>
 
 $check_list= filter_input(INPUT_POST, 'check_list' , FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY );
 
