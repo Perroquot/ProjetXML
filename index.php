@@ -1,7 +1,10 @@
 <?php 
+session_start();
+require_once 'fonction.php';
 
 save_user_pref();
 $theme = get_user_pref();
+
 
 $xml_sport = simplexml_load_file('http://www.lepoint.fr/sport/rss.xml');
 $titles_sport = $xml_sport->xpath('//item/title');
@@ -58,13 +61,18 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
             <a href="./preference.php">Préférences</a>
         </nav>
         <section id="entrer">
+            <div class="article-start">
+                <div>
+                    <h1>Title de l'article</h1>
+                </div>
+                <div>
+                    <img src="./assets/img/Mbappe.png" alt="mbappé paris">
+                </div>
+
             <div>
-                <h1>Title de l'article</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
             </div>
-            <div>
-            <img src="./assets/img/Mbappe.png" alt="mbappé paris">
-            </div>
-            <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+            <!-- <div class="pub"><a href="https://lamanu.fr/" target="_blank"><img src="./assets/img/pub-lamanu.png" alt="" class="pub-manu"></a></div> -->
         </section>
 
     </main> 
