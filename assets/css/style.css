@@ -214,10 +214,21 @@ header{
     /* padding: 1.5vh; */
     font-size: .8em;
     width: 300px;
+    margin-top: 1vh;
+}
+
+.article-title a{
+    /* padding: 1.5vh; */
+    color: black;
+    text-decoration: none;
+}
+.article-title a:hover{
+    text-decoration: underline;
 }
 
 .article img{
     width: 300px;
+    height: 15vh;
     margin: 0;
 }
 .article-categories-row2{

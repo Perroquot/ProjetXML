@@ -11,18 +11,25 @@ $my_cookie_aray=check_cookies();
 $xml_sport = simplexml_load_file('http://www.lepoint.fr/sport/rss.xml');
 $titles_sport = $xml_sport->xpath('//item/title');
 $img_sport = $xml_sport->xpath('//item/enclosure/@url');
+$link_sport = $xml_sport->xpath('//item/link');
 
 $xml_societe = simplexml_load_file('http://www.lepoint.fr/content/system/rss/24H/24H_doc.xml');
 $titles_societe = $xml_societe->xpath('//item/title');
 $img_societe = $xml_societe->xpath('//item/enclosure/@url');
+$link_societe = $xml_societe->xpath('//item/link');
+
 
 $xml_monde = simplexml_load_file('https://www.lefigaro.fr/rss/figaro_voyages.xml');
 $titles_monde = $xml_monde->xpath('//item/title');
 $img_monde = $xml_monde->xpath('//item/media:content/@url');
+$link_monde = $xml_monde->xpath('//item/link');
+
 
 $xml_culture = simplexml_load_file('https://www.lepoint.fr/culture/rss.xml');
 $titles_culture = $xml_culture->xpath('//item/title');
-$img_culture = $xml_culture->xpath('//item/enclosure/@url')
+$img_culture = $xml_culture->xpath('//item/enclosure/@url');
+$link_culture = $xml_culture->xpath('//item/link');
+
 
 
 ?>
@@ -65,10 +72,10 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
         <section id="entrer">
             <div class="article-start">
                 <div>
-                    <h1><?php echo $titles_sport[3]?></h1>
+                    <h1><?php echo $titles_sport[2]?></h1>
                 </div>
                 <div>
-                    <img src="<?php echo $img_sport[3]?>" alt="mbappé paris">
+                <a href="<?php echo $link_sport[2]?>" target="_blank"><img src="<?php echo $img_sport[2]?>"></a>
                 </div>
 
             <!-- <div class="pub"><a href="https://lamanu.fr/" target="_blank"><img src="./assets/img/pub-lamanu.png" alt="" class="pub-manu"></a></div> -->
@@ -127,7 +134,7 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
                         <img src="<?php echo $img_sport[0] ?>">
                     </div>
                     <div class="article-title">
-                        <?php echo $titles_sport[0] ?>
+                        <a href="<?php echo $link_sport[0]?>" target="_blank"><?php echo $titles_sport[0] ?></a>
                     </div>
                 </div>
                 <div class="article article2">
@@ -135,7 +142,7 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
                         <img src="<?php echo $img_sport[1] ?>">
                     </div>
                     <div class="article-title">
-                        <?php echo $titles_sport[1] ?>
+                    <a href="<?php echo $link_sport[1]?>" target="_blank"><?php echo $titles_sport[1] ?></a>
                     </div>
                 </div>
                 <div class="article article3">
@@ -143,7 +150,7 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
                         <img src="<?php echo $img_sport[3] ?>">
                     </div>
                     <div class="article-title">
-                        <?php echo $titles_sport[3] ?>
+                    <a href="<?php echo $link_sport[3]?>" target="_blank"><?php echo $titles_sport[3] ?></a>
                     </div>
                 </div>
                 <div class="article article4">
@@ -151,21 +158,20 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
                         <img src="<?php echo $img_sport[4] ?>">
                     </div>
                     <div class="article-title">
-                        <?php echo $titles_sport[4] ?>
+                    <a href="<?php echo $link_sport[4]?>" target="_blank"><?php echo $titles_sport[4] ?></a>
                     </div>
                 </div>
             </div>
     <?php } ?>
     <?php if($my_cookie_aray) if(in_array('politique',$my_cookie_aray)){?>
-        <div class="container-article">
-            <h3>Politique : </h3>
+            <h3>Société : </h3>
             <div class="article-categories-row1">
                 <div class="article article1">
                     <div class="article-img">
                         <img src="<?php echo $img_societe[0] ?>">
                     </div>
                     <div class="article-title">
-                        <?php echo $titles_societe[0] ?>
+                    <a href="<?php echo $link_societe[0]?>" target="_blank"><?php echo $titles_societe[0] ?></a>
                     </div>
                 </div>
                 <div class="article article2">
@@ -173,7 +179,7 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
                         <img src="<?php echo $img_societe[1] ?>">
                     </div>
                     <div class="article-title">
-                        <?php echo $titles_societe[1] ?>
+                    <a href="<?php echo $link_societe[1]?>" target="_blank"><?php echo $titles_societe[1] ?></a>
                     </div>
                 </div>
                 <div class="article article3">
@@ -181,29 +187,28 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
                         <img src="<?php echo $img_societe[3] ?>">
                     </div>
                     <div class="article-title">
-                        <?php echo $titles_societe[3] ?>
+                    <a href="<?php echo $link_societe[3]?>" target="_blank"><?php echo $titles_societe[3] ?></a>
                     </div>
-                </div>
+                    <a href="<?php echo $link_sport[0]?>" target="_blank"><a href="<?php echo $link_sport[0]?>" target="_blank"><a href="<?php echo $link_sport[0]?>" target="_blank"><a href="<?php echo $link_sport[0]?>" target="_blank"><a href="<?php echo $link_sport[0]?>" target="_blank"><a href="<?php echo $link_sport[0]?>" target="_blank"><a href="<?php echo $link_sport[0]?>" target="_blank"><a href="<?php echo $link_sport[0]?>" target="_blank"></div>
                 <div class="article article4">
                     <div class="article-img">
                         <img src="<?php echo $img_societe[4] ?>">
                     </div>
                     <div class="article-title">
-                        <?php echo $titles_societe[4] ?>
+                    <a href="<?php echo $link_societe[4]?>" target="_blank"><?php echo $titles_societe[4] ?></a>
                     </div>
                 </div>
             </div>
     <?php } ?>
     <?php if($my_cookie_aray) if(in_array('monde',$my_cookie_aray)){?>
-        <div class="container-article">
             <h3> Monde :</h3>
             <div class="article-categories-row1">
                 <div class="article article1">
                     <div class="article-img">
-                        <img src="<?php echo $img_monde[0] ?>">
+                    <img src="<?php echo $img_monde[0] ?>">
                     </div>
                     <div class="article-title">
-                        <?php echo $titles_monde[0] ?>
+                    <a href="<?php echo $link_monde[0]?>" target="_blank"><?php echo $titles_monde[0] ?></a>
                     </div>
                 </div>
                 <div class="article article2">
@@ -211,7 +216,7 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
                         <img src="<?php echo $img_monde[1] ?>">
                     </div>
                     <div class="article-title">
-                        <?php echo $titles_monde[1] ?>
+                    <a href="<?php echo $link_monde[1]?>" target="_blank"><?php echo $titles_monde[1] ?></a>
                     </div>
                 </div>
                 <div class="article article3">
@@ -219,7 +224,7 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
                         <img src="<?php echo $img_monde[3] ?>">
                     </div>
                     <div class="article-title">
-                        <?php echo $titles_monde[3] ?>
+                    <a href="<?php echo $link_monde[3]?>" target="_blank"><?php echo $titles_monde[3] ?></a>
                     </div>
                 </div>
                 <div class="article article4">
@@ -227,13 +232,12 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
                         <img src="<?php echo $img_monde[4] ?>">
                     </div>
                     <div class="article-title">
-                        <?php echo $titles_monde[4] ?>
+                    <a href="<?php echo $link_monde[4]?>" target="_blank"><?php echo $titles_monde[4] ?></a>
                     </div>
                 </div>
             </div>
     <?php } ?>
     <?php if($my_cookie_aray) if(in_array('culture',$my_cookie_aray)){?>
-        <div class="container-article">
             <h3>Culture :</h3>
             <div class="article-categories-row1">
                 <div class="article article1">
@@ -241,7 +245,7 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
                         <img src="<?php echo $img_culture[0] ?>">
                     </div>
                     <div class="article-title">
-                        <?php echo $titles_culture[0] ?>
+                    <a href="<?php echo $link_culture[0]?>" target="_blank"><?php echo $titles_culture[0] ?></a>
                     </div>
                 </div>
                 <div class="article article2">
@@ -249,7 +253,7 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
                         <img src="<?php echo $img_culture[1] ?>">
                     </div>
                     <div class="article-title">
-                        <?php echo $titles_culture[1] ?>
+                    <a href="<?php echo $link_culture[1]?>" target="_blank"><?php echo $titles_culture[1] ?></a>
                     </div>
                 </div>
                 <div class="article article3">
@@ -257,7 +261,7 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
                         <img src="<?php echo $img_culture[3] ?>">
                     </div>
                     <div class="article-title">
-                        <?php echo $titles_culture[3] ?>
+                    <a href="<?php echo $link_culture[3]?>" target="_blank"><?php echo $titles_culture[3] ?></a>
                     </div>
                 </div>
                 <div class="article article4">
@@ -265,11 +269,12 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
                         <img src="<?php echo $img_culture[4] ?>">
                     </div>
                     <div class="article-title">
-                        <?php echo $titles_culture[4] ?>
+                    <a href="<?php echo $link_culture[4]?>" target="_blank"><?php echo $titles_culture[4] ?></a>
                     </div>
                 </div>
             </div>
     <?php } ?>
+        </div>
     <footer>
         <div class="reseaux">
             <div><p>Suivez nous <br> sur les reseaux sociaux</p></div>
