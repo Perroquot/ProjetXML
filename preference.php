@@ -5,7 +5,7 @@ require_once 'fonction.php';
 save_user_pref();
 $theme = get_user_pref();
 
-$check_list= save_user_fav();
+$check_list= set_user_fav();
 
 $my_cookie_aray=check_cookies();
 ?>

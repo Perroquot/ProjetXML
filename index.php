@@ -6,6 +6,8 @@ save_user_pref();
 $theme = get_user_pref();
 
 
+$my_cookie_aray=check_cookies();
+
 $xml_sport = simplexml_load_file('http://www.lepoint.fr/sport/rss.xml');
 $titles_sport = $xml_sport->xpath('//item/title');
 $img_sport = $xml_sport->xpath('//item/enclosure/@url');
@@ -75,6 +77,7 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
     </main> 
     <!-- Container catégories -->
     <section>
+
         <div class="container-categories1">
             <h2>Catégories :</h2>
             <div class="card-categories">
@@ -109,77 +112,164 @@ $img_culture = $xml_culture->xpath('//item/enclosure/@url')
             </div>
             </div>
     </section>
-    <div class="container-article">
-        <h2>Article : </h2>
-        <div class="article-categories-row1">
-            <div class="article article1">
-                <div class="article-img">
-                    <img src="<?php echo $img_sport[0] ?>">
+            
+            
+        <div class="container-article">
+            <h2>Préférences : </h2>
+            <?php if(empty($my_cookie_aray)){?>
+            <h3>Veuillez définir des préférences</h3>
+            <?php } ?>
+        <?php if($my_cookie_aray) if(in_array('sport',$my_cookie_aray)){?>
+            <h3>Sport : </h3>
+            <div class="article-categories-row1">
+                <div class="article article1">
+                    <div class="article-img">
+                        <img src="<?php echo $img_sport[0] ?>">
+                    </div>
+                    <div class="article-title">
+                        <?php echo $titles_sport[0] ?>
+                    </div>
                 </div>
-                <div class="article-title">
-                    <?php echo $titles_sport[0] ?>
+                <div class="article article2">
+                    <div class="article-img">
+                        <img src="<?php echo $img_sport[1] ?>">
+                    </div>
+                    <div class="article-title">
+                        <?php echo $titles_sport[1] ?>
+                    </div>
                 </div>
-            </div>
-            <div class="article article2">
-                <div class="article-img">
-                    <img src="<?php echo $img_sport[1] ?>">
+                <div class="article article3">
+                    <div class="article-img">
+                        <img src="<?php echo $img_sport[3] ?>">
+                    </div>
+                    <div class="article-title">
+                        <?php echo $titles_sport[3] ?>
+                    </div>
                 </div>
-                <div class="article-title">
-                    <?php echo $titles_sport[1] ?>
-                </div>
-            </div>
-            <div class="article article3">
-                <div class="article-img">
-                    <img src="<?php echo $img_societe[0] ?>">
-                </div>
-                <div class="article-title">
-                    <?php echo $titles_societe[0] ?>
-                </div>
-            </div>
-            <div class="article article4">
-                <div class="article-img">
-                    <img src="<?php echo $img_societe[1] ?>">
-                </div>
-                <div class="article-title">
-                    <?php echo $titles_societe[1] ?>
-                </div>
-            </div>
-        </div>
-        <div class="article-categories-row2">
-            <div class="article article5">
-                <div class="article-img">
-                    <img src="<?php echo $img_monde[0] ?>">
-                </div>
-                <div class="article-title">
-                    <?php echo $titles_monde[0] ?>
+                <div class="article article4">
+                    <div class="article-img">
+                        <img src="<?php echo $img_sport[4] ?>">
+                    </div>
+                    <div class="article-title">
+                        <?php echo $titles_sport[4] ?>
+                    </div>
                 </div>
             </div>
-            <div class="article article6">
-                <div class="article-img">
-                    <img src="<?php echo $img_monde[1] ?>">
+    <?php } ?>
+    <?php if($my_cookie_aray) if(in_array('politique',$my_cookie_aray)){?>
+        <div class="container-article">
+            <h3>Politique : </h3>
+            <div class="article-categories-row1">
+                <div class="article article1">
+                    <div class="article-img">
+                        <img src="<?php echo $img_societe[0] ?>">
+                    </div>
+                    <div class="article-title">
+                        <?php echo $titles_societe[0] ?>
+                    </div>
                 </div>
-                <div class="article-title">
-                    <?php echo $titles_monde[1] ?>
+                <div class="article article2">
+                    <div class="article-img">
+                        <img src="<?php echo $img_societe[1] ?>">
+                    </div>
+                    <div class="article-title">
+                        <?php echo $titles_societe[1] ?>
+                    </div>
+                </div>
+                <div class="article article3">
+                    <div class="article-img">
+                        <img src="<?php echo $img_societe[3] ?>">
+                    </div>
+                    <div class="article-title">
+                        <?php echo $titles_societe[3] ?>
+                    </div>
+                </div>
+                <div class="article article4">
+                    <div class="article-img">
+                        <img src="<?php echo $img_societe[4] ?>">
+                    </div>
+                    <div class="article-title">
+                        <?php echo $titles_societe[4] ?>
+                    </div>
                 </div>
             </div>
-            <div class="article article7">
-                <div class="article-img">
-                    <img src="<?php echo $img_culture[0] ?>">
+    <?php } ?>
+    <?php if($my_cookie_aray) if(in_array('monde',$my_cookie_aray)){?>
+        <div class="container-article">
+            <h3> Monde :</h3>
+            <div class="article-categories-row1">
+                <div class="article article1">
+                    <div class="article-img">
+                        <img src="<?php echo $img_monde[0] ?>">
+                    </div>
+                    <div class="article-title">
+                        <?php echo $titles_monde[0] ?>
+                    </div>
                 </div>
-                <div class="article-title">
-                    <?php echo $titles_culture[0] ?>
+                <div class="article article2">
+                    <div class="article-img">
+                        <img src="<?php echo $img_monde[1] ?>">
+                    </div>
+                    <div class="article-title">
+                        <?php echo $titles_monde[1] ?>
+                    </div>
+                </div>
+                <div class="article article3">
+                    <div class="article-img">
+                        <img src="<?php echo $img_monde[3] ?>">
+                    </div>
+                    <div class="article-title">
+                        <?php echo $titles_monde[3] ?>
+                    </div>
+                </div>
+                <div class="article article4">
+                    <div class="article-img">
+                        <img src="<?php echo $img_monde[4] ?>">
+                    </div>
+                    <div class="article-title">
+                        <?php echo $titles_monde[4] ?>
+                    </div>
                 </div>
             </div>
-            <div class="article article8">
-                <div class="article-img">
-                    <img src="<?php echo $img_culture[1] ?>">
+    <?php } ?>
+    <?php if($my_cookie_aray) if(in_array('culture',$my_cookie_aray)){?>
+        <div class="container-article">
+            <h3>Culture :</h3>
+            <div class="article-categories-row1">
+                <div class="article article1">
+                    <div class="article-img">
+                        <img src="<?php echo $img_culture[0] ?>">
+                    </div>
+                    <div class="article-title">
+                        <?php echo $titles_culture[0] ?>
+                    </div>
                 </div>
-                <div class="article-title">
-                    <?php echo $titles_culture[1] ?>
+                <div class="article article2">
+                    <div class="article-img">
+                        <img src="<?php echo $img_culture[1] ?>">
+                    </div>
+                    <div class="article-title">
+                        <?php echo $titles_culture[1] ?>
+                    </div>
+                </div>
+                <div class="article article3">
+                    <div class="article-img">
+                        <img src="<?php echo $img_culture[3] ?>">
+                    </div>
+                    <div class="article-title">
+                        <?php echo $titles_culture[3] ?>
+                    </div>
+                </div>
+                <div class="article article4">
+                    <div class="article-img">
+                        <img src="<?php echo $img_culture[4] ?>">
+                    </div>
+                    <div class="article-title">
+                        <?php echo $titles_culture[4] ?>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+    <?php } ?>
     <footer>
         <div class="reseaux">
             <div><p>Suivez nous <br> sur les reseaux sociaux</p></div>

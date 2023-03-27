@@ -44,12 +44,13 @@ function save_user_pref()
     }
 }
 
-function save_user_fav()
+function set_user_fav()
 {
 $check_list= filter_input(INPUT_POST, 'check_list' , FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY );
 
 setcookie('user_favorite',json_encode($check_list), strtotime('1 year'));
 }
+
 
 function check_cookies()
 {
